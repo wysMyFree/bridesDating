@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Present Lady</title>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css"/>
+    <link rel="stylesheet" href="css/jquery.scrollbar.css"/>
+    <link rel="stylesheet" href="css/jquery.formstyler.css"/>
+    <link rel="stylesheet" href="css/chosen.min.css"/>
+    <link rel="stylesheet" href="css/style-min.css"/>
+
+</head>
+<h1>Modal windowm loading</h1>
+<div class="modal fade bs-example-modal-lg " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal">
+    <div class="modal-dialog modal-lg big-lg">
+        <div class="modal-content invite-contetnt">
+            <div class="container-fluid">
+                <div class="flex-wrap-modal">
+                    <div class="modal-item main">
+                        <div class="invie-to">
+                            <div class="invite-to-h3">Send presents to
+                                <div class="invite-link">
+                                    <a href="#0" data-toggle="tooltip"  class="name-pup-up">Daryna</a>
+                                    <div class="my-tooltip">
+                                        <div class="link-girl clearfix">
+                                            <div class="bl">
+                                                <div class="img-box ">
+                                                    <img src="img/girl-list-mini.jpg" alt="item-girl"/>
+                                                </div>
+                                            </div>
+                                            <div class="name-girl">
+                                                <h3 class="item-girl-name">Daryna</h3>
+                                                <span class="item-girl-from">25 years, from Lviv</span>
+                                            </div>
+                                            <span class="view-profile"><a href="#0">View Profile</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <sup class="id-girl">(ID:2356)</sup>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-lg-12 no-padding">
+                                <div>
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs present-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#Presents" aria-controls="Presents" role="tab" data-toggle="tab">
+                                            <span class="glyphicon glyphicon-gift"></span>Select Presents</a></li>
+                                        <li role="presentation"><a href="#GiftCard" aria-controls="profile" role="tab" data-toggle="tab">
+                                            <span class="glyphicon glyphicon-edit"></span> GiftCard Message</a></li>
+                                        <li role="presentation"><a href="#Credits" aria-controls="credits" role="tab" data-toggle="tab">
+                                            <span class="glyphicon glyphicon-usd"></span>Pay with Credits</a></li>
+                                        <li role="presentation"><a href="#balance" aria-controls="balance" role="tab" data-toggle="tab">
+                                            <span class="glyphicon glyphicon-usd"></span>Balance</a></li>
+                                        <li role="presentation"><a href="#Complete" aria-controls="settings" role="tab" data-toggle="tab">
+                                            <span class="glyphicon glyphicon-check"></span>Complete!</a></li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content present-content">
+                                        <div role="tabpanel" class="tab-pane active" id="Presents">
+                                            <ul class="nav nav-pills" role="tablist">
+                                                <li role="presentation" class="active"><a href="#Flowers"  role="tab" data-toggle="tab">Flowers <span>(106)</span></a></li>
+                                                <li role="presentation"><a href="#Sweets" role="tab"  data-toggle="tab">Sweets & Candies <span>(106)</span></a></li>
+                                                <li role="presentation"><a href="#Underwear" role="tab" data-toggle="tab">Underwear <span>(10)</span></a></li>
+                                                <li role="presentation"><a href="#Gadgets" role="tab" data-toggle="tab">Gadgets <span>(106)</span></a></li>
+                                                <li role="presentation"><a href="#Services" role="tab" data-toggle="tab">Services <span>(56)</span></a></li>
+                                            </ul>
+                                            <div class="tab-content present-group-content">
+                                                <div role="tabpanel" class="tab-pane active"  id="Flowers">
+                                                    <div class="row">
+                                                        <div class="scrollbar-inner inner-gift">
+                                                            <div class="gift-wrapper">
+                                                                    <div class="gift">
+                                                                        <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                        <div class="name-gift">
+                                                                            <h3>Dozen of red roses</h3>
+                                                                            <span>99 Credits</span>
+                                                                        </div>
+                                                                        <div class="event-present">
+                                                                            <label>Q-ty</label>
+                                                                                <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                                            <a href="#0" class="btn">Add Present</a>
+                                                                        </div>
+                                                                    </div>
+                                                                <div class="gift">
+                                                                    <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                    <div class="name-gift">
+                                                                        <h3>Dozen of red roses</h3>
+                                                                        <span>99 Credits</span>
+                                                                    </div>
+                                                                    <div class="event-present">
+                                                                        <label>Q-ty</label>
+                                                                        <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                                        <a href="#0" class="btn">Add Present</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gift">
+                                                                    <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                    <div class="name-gift">
+                                                                        <h3>Dozen of red roses</h3>
+                                                                        <span>99 Credits</span>
+                                                                    </div>
+                                                                    <div class="event-present">
+                                                                        <label>Q-ty</label>
+                                                                        <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                                        <a href="#0" class="btn">Add Present</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gift">
+                                                                    <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                    <div class="name-gift">
+                                                                        <h3>Dozen of red roses</h3>
+                                                                        <span>99 Credits</span>
+                                                                    </div>
+                                                                    <div class="event-present">
+                                                                        <label>Q-ty</label>
+                                                                        <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                                        <a href="#0" class="btn">Add Present</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gift">
+                                                                    <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                    <div class="name-gift">
+                                                                        <h3>Dozen of red roses</h3>
+                                                                        <span>99 Credits</span>
+                                                                    </div>
+                                                                    <div class="event-present">
+                                                                        <label>Q-ty</label>
+                                                                        <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                                        <a href="#0" class="btn">Add Present</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gift">
+                                                                    <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                    <div class="name-gift">
+                                                                        <h3>Dozen of red roses</h3>
+                                                                        <span>99 Credits</span>
+                                                                    </div>
+                                                                    <div class="event-present">
+                                                                        <label>Q-ty</label>
+                                                                        <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                                        <a href="#0" class="btn">Add Present</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="Sweets">
+                                                    <div class="row">
+                                                        <div class="scrollbar-inner">
+                                                            <div class="gift-wrapper">
+                                                                <div class="gift">
+                                                                    <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                    <div class="name-gift">
+                                                                        <h3>Dozen of red roses</h3>
+                                                                        <span>99 Credits</span>
+                                                                    </div>
+                                                                    <div class="event-present">
+                                                                        <label>Q-ty</label>
+                                                                        <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                                        <a href="#0" class="btn">Add Present</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="Underwear">
+                                                    <div class="row">
+                                                        <div class="scrollbar-inner">
+                                                            <div class="gift-wrapper">
+                                                                <div class="gift">
+                                                                    <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                    <div class="name-gift">
+                                                                        <h3>Dozen of red roses</h3>
+                                                                        <span>99 Credits</span>
+                                                                    </div>
+                                                                    <div class="event-present">
+                                                                        <label>Q-ty</label>
+                                                                        <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                                        <a href="#0" class="btn">Add Present</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="Gadgets">
+                                                    <div class="row">
+                                                        <div class="scrollbar-inner">
+                                                            <div class="gift-wrapper">
+                                                                <div class="gift">
+                                                                    <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                    <div class="name-gift">
+                                                                        <h3>Dozen of red roses</h3>
+                                                                        <span>99 Credits</span>
+                                                                    </div>
+                                                                    <div class="event-present">
+                                                                        <label>Q-ty</label>
+                                                                        <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                                        <a href="#0" class="btn">Add Present</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="Services">
+                                                    <div class="row">
+                                                        <div class="scrollbar-inner">
+                                                            <div class="gift-wrapper">
+                                                                <div class="gift">
+                                                                    <img src="img/gift1.jpg" alt="present" class="img-responsive"/>
+                                                                    <div class="name-gift">
+                                                                        <h3>Dozen of red roses</h3>
+                                                                        <span>99 Credits</span>
+                                                                    </div>
+                                                                    <div class="event-present">
+                                                                        Q-ty
+                                                                        <div class="form-group number left-number cart-number">
+                                                                            <input type="number" class=".my-number"  placeholder="18" min="1" max="99"  value="1">
+                                                                        </div>
+                                                                        <a href="#0" class="btn">Add Present</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="GiftCard">
+                                            <ul class="nav nav-pills" role="tablist">
+                                                <li role="presentation" class="active"><a href="#free"  role="tab" data-toggle="tab">Free Cards <span>(106)</span></a></li>
+                                                <li role="presentation"><a href="#exclusive" role="tab"  data-toggle="tab">Exclusive Love Cards  <span>(106)</span></a></li>
+                                                <li role="presentation"><a href="#brithday" role="tab" data-toggle="tab">Birthday Cards<span>(10)</span></a></li>
+                                                <li role="presentation"><a href="#holiday" role="tab" data-toggle="tab">Holiday Cards <span>(106)</span></a></li>
+                                            </ul>
+                                            <div class="tab-content present-group-content">
+                                                <div role="tabpanel" class="tab-pane active"  id="free">
+                                                    <div class="row">
+                                                        <div class="scrollbar-inner">
+                                                            <div class="gift-wrapper">
+                                                                <div class="gift card-item">
+                                                                    <div class="img-wrap">
+                                                                        <div class="center-hover">
+                                                                            <h3>Select</h3>
+                                                                            <span>free</span>
+                                                                        </div>
+                                                                        <img src="img/card-mess.jpg" alt="present" class="img-responsive"/>
+                                                                        <span class="selected">selected</span>
+                                                                        <div class="for-hover"> </div>
+                                                                    </div>
+                                                                    <div class="name-gift">
+                                                                        <h3>Holiday Cards</h3>
+                                                                        <span class="free">free</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gift card-item">
+                                                                    <div class="img-wrap">
+                                                                        <div class="center-hover">
+                                                                            <h3>Select</h3>
+                                                                            <span>free</span>
+                                                                        </div>
+                                                                        <img src="img/card-mess.jpg" alt="present" class="img-responsive active"/>
+                                                                        <span class="selected" style="display: block">selected</span>
+                                                                        <div class="for-hover"> </div>
+                                                                    </div>
+                                                                    <div class="name-gift">
+                                                                        <h3>Holiday Cards</h3>
+                                                                        <span class="free">free</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gift card-item">
+                                                                    <div class="img-wrap">
+                                                                        <div class="center-hover">
+                                                                            <h3>Select</h3>
+                                                                            <span>free</span>
+                                                                        </div>
+                                                                        <img src="img/card-mess.jpg" alt="present" class="img-responsive"/>
+                                                                        <span class="selected">selected</span>
+                                                                        <div class="for-hover"> </div>
+                                                                    </div>
+                                                                    <div class="name-gift">
+                                                                        <h3>Holiday Cards</h3>
+                                                                        <span class="free">free</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gift card-item">
+                                                                    <div class="img-wrap">
+                                                                        <div class="center-hover">
+                                                                            <h3>Select</h3>
+                                                                            <span>free</span>
+                                                                        </div>
+                                                                        <img src="img/card-mess.jpg" alt="present" class="img-responsive"/>
+                                                                        <span class="selected">selected</span>
+                                                                        <div class="for-hover"> </div>
+                                                                    </div>
+                                                                    <div class="name-gift">
+                                                                        <h3>Holiday Cards</h3>
+                                                                        <span class="free">free</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gift card-item">
+                                                                    <div class="img-wrap">
+                                                                        <div class="center-hover">
+                                                                            <h3>Select</h3>
+                                                                            <span>free</span>
+                                                                        </div>
+                                                                        <img src="img/card-mess.jpg" alt="present" class="img-responsive"/>
+                                                                        <span class="selected">selected</span>
+                                                                        <div class="for-hover"> </div>
+                                                                    </div>
+                                                                    <div class="name-gift">
+                                                                        <h3>Holiday Cards</h3>
+                                                                        <span class="free">free</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="exclusive">
+                                                    <div class="row">
+                                                        <div class="scrollbar-inner">
+                                                            <div class="gift-wrapper">
+                                                                <div class="gift card-item">
+                                                                    <div class="img-wrap">
+                                                                        <div class="center-hover">
+                                                                            <h3>Select</h3>
+                                                                            <span>free</span>
+                                                                        </div>
+                                                                        <img src="img/card-mess.jpg" alt="present" class="img-responsive"/>
+                                                                        <span class="selected">selected</span>
+                                                                        <div class="for-hover"> </div>
+                                                                    </div>
+                                                                    <div class="name-gift">
+                                                                        <h3>Holiday Cards</h3>
+                                                                        <span class="free">free</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="brithday">
+                                                    <div class="row">
+                                                        <div class="scrollbar-inner">
+                                                            <div class="gift-wrapper">
+                                                                <div class="gift card-item">
+                                                                    <div class="img-wrap">
+                                                                        <div class="center-hover">
+                                                                            <h3>Select</h3>
+                                                                            <span>free</span>
+                                                                        </div>
+                                                                        <img src="img/card-mess.jpg" alt="present" class="img-responsive"/>
+                                                                        <span class="selected">selected</span>
+                                                                        <div class="for-hover"> </div>
+                                                                    </div>
+                                                                    <div class="name-gift">
+                                                                        <h3>Holiday Cards</h3>
+                                                                        <span class="free">free</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane" id="holiday">
+                                                    <div class="row">
+                                                        <div class="scrollbar-inner">
+                                                            <div class="gift-wrapper">
+                                                                <div class="gift card-item active">
+                                                                    <div class="img-wrap">
+                                                                        <div class="center-hover">
+                                                                            <h3>Select</h3>
+                                                                            <span>free</span>
+                                                                        </div>
+                                                                        <img src="img/card-mess.jpg" alt="present" class="img-responsive active"/>
+                                                                        <span class="selected" style="display: block">selected</span>
+                                                                        <div class="for-hover"> </div>
+                                                                    </div>
+                                                                    <div class="name-gift">
+                                                                        <h3>Holiday Cards</h3>
+                                                                        <span class="free">free</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h3 class="title-ledies-group"><span class="line-decor"></span>Now create a personal message<span class="line-decor"></span></h3>
+                                                <div class="gift-wrapper-mess">
+                                                    <textarea  class="mess-gift scrollbar-inner"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="Credits">
+                                            <header class="form-header">
+                                                <p>You have <span class="zero-credit">0 credits</span> on your balance.</p>
+                                                <p>You need to buy <span>587 Credits</span> to complete your order.</p>
+                                            </header>
+                                            <div class="gift-wrapper gift-form">
+                                                <div class="flex-item form-width">
+                                                    <h3 class="title-credit">Select Credits Package</h3>
+                                                    <ul class="credit-package">
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio" value="option1">
+                                                                    <span class="price-credit">10 Credits</span><span class="price-value">$14.99<b class="promo-save">you save 10%</b></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                                    <span class="price-credit">25 Credits</span><span class="price-value">$14.99<b class="promo-save">you save 20%</b></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option1">
+                                                                    <span class="price-credit">50 Credits</span><span class="price-value">$14.99<b class="promo-save">you save 30%</b></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option1">
+                                                                    <span class="price-credit">100 Credits</span><span class="price-value">$14.99<b class="promo-save">you save 30%</b></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1">
+                                                                    <span class="price-credit">400 Credits</span><span class="price-value">$14.99<b class="promo-save">you save 40%</b></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="active">
+                                                            <div class="input-group">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option1">
+                                                                    <span class="price-credit">800 Credits</span><span class="price-value">$14.99<b class="promo-save">you save 50%</b></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option1">
+                                                                    <span class="price-credit">1000 Credits</span><span class="price-value">$14.99<b class="promo-save">you save 10%</b></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <h3  class="title-credit">Convert Exact Amount</h3>
+                                                    <ul class="credit-package">
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <label class="radio-inline">
+                                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option1">
+                                                                    <span class="price-credit">587 Credits</span><span class="price-value">$500.99<b class="promo-save">you save 10%</b></span>
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="flex-item form-width">
+                                                    <h3  class="title-credit">Pay by Credit Card</h3>
+                                                    <form id="pay-card">
+                                                        <div class="form-group has-feedback">
+                                                            <label for="card-numer">Card Number</label>
+                                                            <input type="email" class="form-control has-success" id="card-numer" placeholder="Card Number">
+                                                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                                            <span id="inputSuccess2Status" class="sr-only">(success)</span>
+                                                        </div>
+                                                        <div class="form-group clearfix">
+                                                            <label>Valid thru</label>
+                                                            <div class="select-wrap">
+                                                                <select class="mm">
+                                                                    <option>00</option>
+                                                                    <option>02</option>
+                                                                    <option>03</option>
+                                                                    <option>04</option>
+                                                                </select>
+                                                                <span>/</span>
+                                                                <select class="yy">
+                                                                    <option>00</option>
+                                                                    <option>02</option>
+                                                                    <option>03</option>
+                                                                    <option>04</option>
+                                                                </select>
+                                                                <div class="cvv-wrap">
+                                                                    <label for="cvv" class="cvv">CVV</label>
+                                                                    <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-placement="top" title="CVV"></span>
+                                                                    <input type="text" class="form-control has-success" id="cvv" placeholder="CVV">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group has-feedback">
+                                                            <label for="name-card">Name on Card</label>
+                                                            <input type="text" class="form-control has-error" id="name-card" placeholder="Name Card">
+                                                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                                            <span id="inputError2Status" class="sr-only">(error)</span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="phone">Mobile Phone</label>
+                                                            <input type="text" class="form-control" id="phone" placeholder="Mobile Phone">
+                                                        </div>
+                                                        <div class="form-group">
+
+                                                        </div>
+                                                    </form>
+                                                    <div class="panel-mess warning">
+                                                        <h3>Inportant Warning!</h3>
+                                                        <span class="glyphicon glyphicon-warning-sign"></span>
+                                                        <p>Please fill all needed fields.
+                                                            We need to have a correct data to proceed.
+                                                        </p>
+                                                    </div>
+                                                    <div class="panel-mess success">
+                                                        <h3>Good Selection!</h3>
+                                                        <span class="glyphicon glyphicon-ok-circle"></span>
+                                                        <p>If you are about to convert the axact needed amount to
+                                                            credits you are loosing your possible discount.
+                                                        </p>
+                                                    </div>
+                                                    <div class="panel-mess info">
+                                                        <h3>Please notice!</h3>
+                                                        <span class="glyphicon glyphicon-info-sign"></span>
+                                                        <p>If you are about to convert the axact needed amount
+                                                            to credits you are loosing your possible discount.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="balance">
+                                            <div class="gift-wrapper balance">
+                                                <h3>You Balance</h3>
+                                                <p>You have <span class="have-credit">800 credits</span> on your account.</p>
+                                                <h3>Cart Total</h3>
+                                                <p> <span class="have-credit">765 credits</span> will be charged from your account.</p>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="Complete">
+                                            <div class="gift-wrapper no-complete">
+                                                <h1>Transaction Failed</h1>
+                                                <h3>Check your credit card balance</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Adipisci blanditiis cupiditate,
+                                                    doloribus dolorum eligendi ex, facilis laudantium minima
+                                                    </p>
+                                                <a href="#0" class="btn">Try Again</a>
+                                            </div>
+                                            <div class="gift-wrapper complete">
+                                                <h1>Congratulations!</h1>
+                                                <h3>Your order has been processed!</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Adipisci blanditiis cupiditate,
+                                                    doloribus dolorum eligendi ex, facilis laudantium minima
+                                                </p>
+                                                <a href="#0" class="btn">Close window</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-item aside">
+                        <div class="invite-foto-wrap">
+                            <div class="link-girl clearfix">
+                                <div class="bl">
+                                    <div class="img-box ">
+                                        <img src="img/girl-list-mini.jpg" alt="item-girl"/>
+                                    </div>
+                                </div>
+                                <div class="name-girl">
+                                    <h3 class="item-girl-name">Daryna</h3>
+                                    <span class="item-girl-from">25 years, from Lviv</span>
+                                </div>
+                                <span class="view-profile"><a href="#0">View Profile</a></span>
+                            </div>
+                            <div class="cart clearfix">
+                                <span class="glyphicon glyphicon-gift"></span>
+                                <h3 class="title-cart">Presents</h3>
+                                <p>you have selected</p>
+                                <ul class="my-cart">
+                                    <li class="item-cart">
+                                        <div class="clearfix">
+                                            <img src="img/cart-item.jpg" alt="cart" class="img-responsive">
+                                            <div div class="cart-center">
+                                                <h3>Splendid bucket of roses and other nice flowers</h3>
+                                                <span>299 credits</span>
+                                            </div>
+
+                                            <div class="wrap-right">
+                                                <div class="form-group">
+                                                    <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                </div>
+                                                <a href="#0" class="close-item"><span class="glyphicon glyphicon-remove"></span></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-cart">
+                                        <div class="clearfix">
+                                            <img src="img/cart-item2.jpg" alt="cart" class="img-responsive">
+                                            <div div class="cart-center">
+                                                <h3>Splendid bucket of roses and other nice flowers</h3>
+                                                <span>299 credits</span>
+                                            </div>
+                                            <div class="wrap-right">
+                                                <div class="form-group">
+                                                    <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                </div>
+                                                <a href="#0" class="close-item"><span class="glyphicon glyphicon-remove"></span></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-cart">
+                                        <div class="clearfix">
+                                            <img src="img/cart-item.jpg" alt="cart" class="img-responsive">
+                                            <div div class="cart-center">
+                                                <h3>5 ballons of different colors</h3>
+                                                <span>299 credits</span>
+                                            </div>
+                                            <div class="wrap-right">
+                                                <div class="form-group">
+                                                    <input type="number" class="my-number" placeholder="18" min="1" max="99"  value="1">
+                                                </div>
+                                                <a href="#0" class="close-item"><span class=" glyphicon glyphicon-remove"></span></a>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="total">
+                                    <span>Total:</span>
+                                    <span class="total-credit">587 credits</span>
+                                </div>
+                                <a href="#0" class="btn">Proceed to GiftCard</a>
+                            </div>
+                            <div class="yuo-credit">
+                                <p>You have <span class="zero-credit">0 credits</span> on your balance.
+                                    <a href="#0">Buy Credits</a>
+                                </p>
+
+                                <p>You have <span class="have-credit">187 credits</span> on your balance.
+                                    <a href="#0">Buy More Credits</a>
+                                </p>
+                            </div>
+                            <div class="row clearfix">
+                                <a href="#0" class="link-norton"><img src="img/norton.jpg" alt="sec" class="img-responsive norton"></a>
+                                <a href="#0" class="link-mcafee"><img src="img/mcafee.jpg" alt="sec" class="img-responsive mcafee"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-datepicker-1.5.0-dist/js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-slider.js"></script>
+<script src="js/jquery.scrollbar.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/chosen.jquery.min.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+    $('.scrollbar-inner').scrollbar();
+   // $('.mess-gift').scrollbar();
+    $(".chosen-select").chosen();
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.mm, .yy, .my-number').styler();
+</script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

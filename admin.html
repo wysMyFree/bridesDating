@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Admin</title>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="css/style-min.css"/>
+</head>
+<div class="container-fluid">
+    <div class="row">
+        <header>
+            <div class="col-lg-12 no-padding">
+                <nav class="navbar nav-lady-catalog">
+                    <div class="container-fluid">
+                        <div class="my-wrap">
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"><a href="#0" class="logo navbar-brand">Brides <span>dating</span></a></div>
+                            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                                <ul class="nav navbar-nav no-visible center-block">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle btn no-visible navbar-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>Menu</a>
+                                        <ul class="dropdown-menu menu">
+                                            <li><a href="#">Agency</a></li>
+                                            <li><a href="#">Ladies</a></li>
+                                            <li><a href="#">Services</a></li>
+                                            <li><a href="#">Support</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav my-custom menu-lady-catalog">
+                                    <li><a href="#">Agency</a></li>
+                                    <li><a href="#">Ladies</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Support</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle btn eng" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English<span class="caret custom-caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="ger">German</a></li>
+                                            <li><a href="#" class="span">Spanish</a></li>
+                                            <li><a href="#" class="ital">Italian</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="page-header admin-panel clearfix">
+                <div class="my-wrap">
+                    <h3 class="hello-name">Administrator Dashboard</h3>
+                    <div class="pres-delivery">
+                        <a href="#0">Presents Delivery<span class="badge">2</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid">
+        <article>
+            <div class="container-fluid">
+                <div class="my-wrap">
+                    <article class="admin-panel">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-4 no-padding">
+                                <a href="#0" class="btn menu-account-btn"><span class="glyphicon glyphicon-menu-hamburger"></span>МЕНЮ</a>
+                                <div class="menu-drop">
+                                    <!-- Первый блок Catalog-->
+                                    <div class="btn-group-vertical" role="group">
+                                        <h2 class="dashboard_h2 h2_item">Catalog</h2>
+                                        <ul class="catalog btn-group">
+                                            <!-- Первый блок -->
+                                            <li class="menu_item">
+                                                <a href="#Ladies" class="btn-default dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Ladies<span class="fa fa-caret-down color_caret"></span></a>
+                                                <ul class="dropdown-menu ladies">
+                                                    <li><a href="#">abc1</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Второй блок -->
+                                            <li class="menu_item">
+                                                <a href="#agencies" class="btn-default dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown" >Agencies <span class="fa fa-caret-down color_caret"></span></a>
+                                                <ul class="dropdown-menu ladies">
+                                                    <li><a href="#">abc2</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Третий блок -->
+                                            <li class="menu_item">
+                                                <a href="#men" class="btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Men<span class="fa fa-caret-down color_caret"></span></a>
+                                                <ul class="dropdown-menu ladies">
+                                                    <li><a href="#">abc3</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Четвертый блок -->
+                                            <li class="menu_item">
+                                                <a href="#dmas" class="btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Difficult men and scammers</a>
+
+                                            </li>
+                                            <!-- Пятый блок -->
+                                            <li class="menu_item">
+                                                <a href="#finances" class="btn-default dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Finances<span class="fa fa-caret-down color_caret"></span></a>
+                                                <ul class="dropdown-menu ladies">
+                                                    <li><a href="#">abc5</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Шестой блок -->
+                                            <li class="menu_item">
+                                                <a href="#expenses" class="btn-default dropdown-toggle " type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Expenses <span class="fa fa-caret-down color_caret"></span></a>
+                                                <ul class="dropdown-menu ladies">
+                                                    <li class="item"><a href="#">Expenses static</a></li>
+                                                    <li><a href="#">Patouts</a></li>
+                                                    <li><a href="#">billing</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Седьмой блок -->
+                                            <li class="menu_item">
+                                                <a href="#Cuccessful" type="button">Cuccessful stories</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Второй блок -->
+                                    <div class="correspondence">
+                                        <h2 class="dashboard_h2  h2_item">Сorrespondence</h2>
+                                        <ul>
+                                            <li class="menu_item"><a href="#Emails">Emails</a></li>
+                                            <li class="menu_item"><a href="#Phone">Phone calls</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Третий блок -->
+                                    <div class="gifts">
+                                        <h2 class="dashboard_h2 h2_item">Gifts delivery</a></h2>
+                                        <ul>
+                                            <li class="menu_item"><a href="#Ordered">Ordered <span class="color_grey">(5)</span></a></li>
+                                            <li class="menu_item"><a href="#In_progress">In progress <span class="color_grey">(56)</span></a></li>
+                                            <li class="menu_item"><a href="#Delivered">Delivered <span class="color_grey">(1050)</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Четвертвый блок -->
+                                    <div class="settings">
+                                        <h2 class="dashboard_h2 h2_item">Settings</h2>
+                                        <ul>
+                                            <li class="menu_item"><a href="#Settings">Settings</a></li>
+                                            <li class="menu_item"><a href="#Est">Edit static texts</a></li>
+                                            <li class="menu_item"><a href="#Mcc">Manage countries/cities</a></li>
+                                            <li class="menu_item"><a href="#Log_Out">Log Out</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                                <div class="row">
+                                    <h2 class="dashboard_h2 clear">Ladies Statistic</h2>
+                                    <div class="statistic_item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#0" class="wrap-item">
+                                            <h3 class="statistic_h3 margin0">1028</h3>
+                                            <p class="ladies_item margin0">Ladies Total</p>
+                                            <p class="item_p margin0">24 new since last weak</p>
+                                        </a>
+                                    </div>
+                                    <div class="statistic_item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#0" class="wrap-item">
+                                            <h3 class="statistic_h3 margin0">780</h3>
+                                            <p class="ladies_item margin0">Ladies Active</p>
+                                        </a>
+                                    </div>
+                                    <div class="statistic_item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#0" class="wrap-item">
+                                            <h3 class="statistic_h3 margin0">140</h3>
+                                            <p class="ladies_item margin0">Ladies Online</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h2 class="dashboard_h2 clear">Men Statistic</h2>
+                                    <div class="statistic_item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#0" class="wrap-item">
+                                            <h3 class="statistic_h3 margin0">235</h3>
+                                            <p class="ladies_item margin0">Men Total</p>
+                                            <p class="item_p margin0">10 new since last weak</p>
+                                        </a>
+                                    </div>
+                                    <div class="statistic_item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#0" class="wrap-item">
+                                            <h3 class="statistic_h3 margin0">86</h3>
+                                            <p class="ladies_item margin0">Men Active</p>
+                                        </a>
+
+                                    </div>
+                                    <div class="statistic_item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#0" class="wrap-item">
+                                            <h3 class="statistic_h3 margin0">9</h3>
+                                            <p class="ladies_item margin0">Men Online</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h2 class="dashboard_h2 clear">General Profit</h2>
+                                    <div class="statistic_item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#0" class="wrap-item">
+                                            <h3 class="statistic_h3 margin0">$20,089</h3>
+                                            <p class="ladies_item margin0">Total income</p>
+                                        </a>
+                                    </div>
+                                    <div class="statistic_item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#0" class="wrap-item">
+                                            <h3 class="statistic_h3 margin0">$8,783</h3>
+                                            <p class="ladies_item margin0">Total Expences</p>
+                                        </a>
+                                    </div>
+                                    <div class="statistic_item col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <a href="#0" class="wrap-item">
+                                            <h3 class="statistic_h3 margin0">1050</h3>
+                                            <p class="ladies_item margin0">Gifts Delivered</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="bottom_block col-lg-4 no-padding-r">
+                                        <h2 class="dashboard_h2">New Ladies</h2>
+                                        <ul class="new_ladies">
+                                            <li class="active"><a href="#">Natasha Ivanova <span class="style_span">28.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Olga Petrova <span class="style_span">27.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Yulia Ivanova <span class="style_span">27.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Dasha Andreeva <span class="style_span">26.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Natasha Ivanova <span class="style_span">25.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Olga Petrova <span class="style_span">20.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Yulia Ivanova <span class="style_span">20.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Dasha Andreeva <span class="style_span">18.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Natasha Ivanova <span class="style_span">18.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Olga Petrova <span class="style_span">15.07.2015</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottom_block col-lg-4">
+                                        <h2 class="dashboard_h2">New Men</h2>
+                                        <ul class="new_ladies">
+                                            <li class="active"><a href="#">Natasha Ivanova <span class="style_span">28.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Olga Petrova <span class="style_span">27.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Yulia Ivanova <span class="style_span">27.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Dasha Andreeva <span class="style_span">26.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Natasha Ivanova <span class="style_span">25.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Olga Petrova <span class="style_span">20.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Yulia Ivanova <span class="style_span">20.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Dasha Andreeva <span class="style_span">18.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Natasha Ivanova <span class="style_span">18.07.2015</span></a></li>
+                                            <li class="active"><a href="#">Olga Petrova <span class="style_span">15.07.2015</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottom_block col-lg-4 no-padding-l">
+                                        <h2 class="dashboard_h2">New Order</h2>
+                                        <ul class="new_ladies">
+                                            <li class="active"><a href="#">30 Credits (Natasha Ivanova)<span class="style_span">25$</span></a></li>
+                                            <li class="active"><a href="#">30 Credits (Olga Petrova)<span class="style_span">25$</span></a></li>
+                                            <li class="active"><a href="#">100 Credits (Yulia Ivanova)<span class="style_span">25$</span></a></li>
+                                            <li class="active"><a href="#">30 Credits (Dasha Andreeva)<span class="style_span">25$</span></a></li>
+                                            <li class="active"><a href="#">10 Credits (Olga Petrova)<span class="style_span">25$</span></a></li>
+                                            <li class="active"><a href="#">20 Credits (Yulia Ivanova)<span class="style_span">25$</span></a></li>
+                                            <li class="active"><a href="#">30 Credits (Dasha Andreeva)<span class="style_span">25$</span></a></li>
+                                            <li class="active"><a href="#">40 Credits (Natasha Ivanova)<span class="style_span">25$</span></a></li>
+                                            <li class="active"><a href="#">200 Credits (Olga Petrova)<span class="style_span">25$</span></a></li>
+                                            <li class="active"><a href="#">30 Credits (Dasha Andreeva)<span class="style_span">25$</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </article>
+
+        <footer class="footer-page">
+            <div class="container-fluid clearfix">
+                <div class="row clearfix">
+                    <div class="my-wrap clearfix">
+                        <div class="col-sx-6 col-sm-6 col-md-6 col-lg-3">
+                            <div class="no-float">
+                                <a href="#0" class="logo navbar-brand">Brides <span>dating</span></a>
+                                <span class="copyr">Copyright. Brides.Dating 2015</span>
+                            </div>
+                            <div class="soc-btn">
+                                <a class="btn-group btn sc-youtube" role="group" aria-label="..."><i class="fa fa-youtube"></i></a>
+                                <a class="btn-group btn sc-facebook" role="group" aria-label="..."><i class="fa fa-facebook"></i></a>
+                                <a class="btn-group btn sc-twiter" role="group" aria-label="..."><i class="fa fa-twitter"></i></a>
+                                <a class="btn-group btn sc-vimeo" role="group" aria-label="..."><i class="fa fa-vimeo"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sx-6 col-sm-6 col-md-6 col-lg-3 cleat-b">
+                            <ul class="footer-title-gr">
+                                <li><h3>About</h3></li>
+                                <li><a href="#0">Video Chat gallery</a></li>
+                                <li><a href="#0">Gallery of Ladies</a></li>
+                                <li><a href="#0">New Ladies</a></li>
+                                <li><a href="#0">Video Gallery</a></li>
+                                <li><a href="#0">Romantic dictionary</a></li>
+                                <li><a href="#0">What does she want?</a></li>
+                                <li><a href="#0">Ladies' dreams about love</a></li>
+                                <li><a href="#0">How we take ladies' photos</a></li>
+                                <li><a href="#0">Parade of brides</a></li>
+                                <li><a href="#0">Age Gap: should it matter?</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sx-6 col-sm-6 col-md-6 col-lg-3">
+                            <ul class="footer-title-gr agency">
+                                <li><h3>Agency</h3></li>
+                                <li class="agancy-mission"><a href="#0">Our mission</a></li>
+                                <li class="agancy-scam"><a href="#0">Against scams</a></li>
+                                <li class="agancy-news"><a href="#0">News</a></li>
+                                <li class="agancy-test"><a href="#0">Testimonials</a></li>
+                                <li class="agancy-girl"><a href="#0">Для девушек</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sx-6 col-sm-6 col-md-6 col-lg-3">
+                            <ul class="footer-title-gr agency service">
+                                <li><h3>Services</h3></li>
+                                <li class="servise-our"><a href="#0">Our services in brief</a></li>
+                                <li class="service-com"><a href="#0">Communication services</a></li>
+                                <li class="service-gift"><a href="#0">Gifts for Lady</a></li>
+                                <li class="service-special"><a href="#0">Special Invoice</a></li>
+                                <li class="service-week"><a href="#0">Weekly special</a></li>
+                                <li class="service-trip"><a href="#0">Trip prices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-datepicker-1.5.0-dist/js/bootstrap-datepicker.min.js"></script>
+<script>
+    $('.menu-account-btn').click(function(){
+        $('.menu-drop').slideToggle();
+    });
+</script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

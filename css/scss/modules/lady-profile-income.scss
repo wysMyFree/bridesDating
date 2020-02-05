@@ -1,0 +1,89 @@
+/*------LADY-PROFILE-INCOME.SCSS----------*/
+@import "../variables.scss";
+
+h1.lady-catalog-title.men-catalog{
+  padding-right: 50px;
+}
+.my-finance, .phone-calls {
+
+  .nav-pills>li{
+    @media screen and (max-width: 390px) {
+      float:none;
+    }
+  }
+    .nav > li > a {
+      font-size: 14px;
+      padding: 10px 30px
+    }
+
+    /* .scroll-element.scroll-x {
+       display:block;
+     }*/
+    .scrollbar-inner {
+      height: auto;
+      min-height: inherit;
+    }
+    .nav-pills > li.active > a {
+      background-color: #16b4dc;
+      font-size: 14px;
+    }
+    table.table-money {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+      margin-top: 50px;
+      border-top: 3px solid #8bd9ed;
+      font-family: $font-normal;
+      font-size: 12px;
+      table-layout: auto;
+      border-left: 1px solid #DDDDDD;
+      border-bottom: 1px solid #DDDDDD;
+      border-right: 1px solid #DDDDDD;
+
+      thead {
+        th {
+          border: none;
+          color: $color-blue-font;
+          font-family: $font-bold;
+        }
+      }
+      tbody {
+        a {
+          color: $color-blue-font;
+          text-decoration: underline;
+        }
+        td.succes {
+          color: $color-green;
+        }
+        td.error {
+          color: red;
+        }
+        td.pending {
+          color: $color-grey-font2;
+        }
+      .id-girl{
+        font-size: 14px;
+      }
+      }
+      .th-border {
+        border-left: 1px solid #DDDDDD;
+
+      }
+    }
+  }
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    border: none;
+  }
+}
+col.col1 {
+  width: 70%;
+}
+.my-photo-flex-wrap{
+  position: relative;
+}
+
+
+/*-----END-LADY-PROFILE-INCOME.SCSS----------*/
+

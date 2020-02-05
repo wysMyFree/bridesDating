@@ -1,0 +1,178 @@
+/*------LADY-ACCOUNT-MY-PHOTO.SCSS----------*/
+
+@import "../variables.scss";
+.flex-container-my-photo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: 100%;
+  justify-content:flex-start;
+  @media only screen and(max-width:847px){
+
+  }
+  @media only screen and(max-width:768px) {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:flex-start;
+  }
+  .my-photo-flex {
+    margin: 0 5px 5px 0;
+    max-height: 190px;
+  img{
+    max-height: 190px;
+  }
+
+    a{
+      display: block;
+      position: relative;
+
+      span{
+        position: absolute;
+        right:6px;
+        top:6px;
+        color:#ffc600;
+      }
+    }
+  }
+}
+
+
+.jq-file__browse {
+  display: none;
+}
+.jq-file__name{
+  background-color: $color-blue-font;
+  color:white;
+  border:none;
+  padding: 0;
+  @include transition(all .3s ease-in-out);
+
+  &:hover{
+    background-color: $color-green;
+  }
+}
+
+.gallery-my-photo{
+  .info-profile{
+    margin: 50px 0;
+  }
+}
+/*-------------------------*/
+.man-gallery-my-photo{
+  .info-profile {
+    margin-top: 30px;
+  }
+}
+
+
+  .flex-container-my-photo{
+  }
+  .hover-view{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: white;
+    text-align: center;
+    top:0;
+    padding-top: 21%;
+    opacity: 0;
+    @include transition(all .3s ease-in-out);
+
+
+    a.btn{
+      width: 40px;
+      height: 40px;
+      color:white;
+      border-radius: 50%;
+      text-align: center;
+      margin: auto;
+      display: inline-block;
+      font-size: 18px;
+      padding-top: 11px;
+      border:none;
+      @include transition(all .3s ease-in-out);
+
+
+      &:hover{
+        color:$color-blue-font;
+
+      }
+
+      span{
+        position: static;
+        color:white;
+      }
+    }
+    a.btn.viev-btn{
+      background-color: $color-green;
+
+    }
+    a.btn.full-scr{
+      background-color: $color-blue-font;
+    }
+
+    a.btn.close-item{
+      background-color: transparent;
+      position: absolute;
+      top:0;
+      right: 0;
+      color:white;
+      &:hover{
+        color:red!important;
+      }
+    }
+    h3{
+      margin-top: 15px;
+      font-size: 18px;
+      span{
+        color:yellow;
+        padding-left:4px;
+      }
+    }
+  }
+  .my-photo-flex{
+    position: relative;
+    &:hover .hover-view{
+      opacity: 1;
+    }
+  }
+
+  .like-heart{
+position: absolute;
+    width: 40px;
+    height: 40px;
+    top:5px;
+    right: 5px;
+
+   input {
+     width: 40px;
+     height: 33px;
+     opacity: 0;
+     cursor: pointer;
+
+   }
+    input.like:checked + i.fa-heart-o:before{
+      content: "\f004";
+    }
+    input.like:not(checked) + i.fa-heart-o:before{
+      content: "\f08a";
+    }
+
+    label {
+      position: relative;
+      color:#FFC600;
+      cursor: pointer;
+
+      &:hover .fa-heart-o:before{
+        content: "\f004"!important;
+      }
+    }
+    i.fa.fa-heart-o {
+      position: absolute;
+      left: 5px;
+      top: 7px;
+      font-size: 27px;
+    }
+  }
+/*-----END-LADY-ACCOUNT-MY-PHOTO.SCSS----------*/

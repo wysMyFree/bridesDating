@@ -1,0 +1,271 @@
+/*------MAN-PAGE-CORRESPONDANCE.SCSS----------*/
+@import "../variables.scss";
+
+
+.message-item.full-item{
+  align-items: stretch;
+
+  span.id-girl.time {
+    display: block;
+    font-size: 12px;
+  }
+  &:hover{
+    border:1px solid #dbdbdb;
+    background-color: white;
+  }
+  .from-mess.full-viev {
+
+    p{
+      font-family: $font-normal;
+      font-style: normal;
+    }
+
+  }
+  .files{
+    margin-top: 20px;
+    font-size: 14px;
+    h3{
+      margin-bottom: 15px;
+    }
+    a{
+      font-size: 14px;
+    }
+    span{
+      margin-right: 10px;
+    }
+
+    a.btn{
+      font-size: 16px;
+      color:$color-grey-line;
+      border: 1px solid $color-grey-dark;
+      padding-top: 65px;
+      width: 206px;
+      height: 108px;
+      @include transition(all .3s ease-in-out);
+
+      background: #f8f8f8 url("../img/button-for-mess.png") no-repeat;
+      &:hover {
+        border:1px solid #AAAAAA;
+        color:#aaaaaa;
+      }
+   }
+    a.reply{
+      background-position: 69px 13px;
+    }
+    a.spam{
+      background-position:-135px 13px;
+    }
+    a.del-mess{
+      background-position: -347px 13px;
+    }
+  }
+
+}
+
+.create-mess{
+  border: 1px solid #dbdbdb;
+  padding: 15px;
+
+  .col-xs-12 {
+    text-align: left;
+  }
+
+  .col-lg-1{
+    padding: 0;
+  }
+  .row{
+    margin-bottom: 25px;
+  }
+  b{
+    color:#b1b1b1;
+    font-size: 14px;
+    font-family: $font-normal;
+    font-weight: 400;
+  }
+  h3{
+    color: #444444;
+    font-size: 24px;
+    margin-bottom: 52px;
+  }
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #EEEEEE;
+    @media only screen and(max-width:767px) {
+      margin-top: 15px;
+    }
+  }
+  input[type="file"]{
+    border: none;
+    margin-top: 15px;
+
+  }
+  textarea{
+    width: 100%;
+    resize: none;
+    height: 300px;
+    border: none;
+    border: 1px solid #EEEEEE;
+
+    @media only screen and(max-width:767px) {
+      margin-top: 15px;
+    }
+  }
+  .input-file+span{
+    font-size: 12px;
+  }
+  .send-letter-btn{
+    border-top:1px solid #dedede;
+    padding-top: 20px;
+    margin-top: 15px;
+
+    a.btn{
+      border: none;
+      background: $color-green;
+      color:white;
+      font-size: 14px;
+      padding: 13px 13px;
+      &:hover{
+        background: green;
+
+      }
+    }
+    a.btn.trash{
+      background: none;
+      color:$color-grey-font2;
+      @include transition(all .3s ease-in-out);
+
+      &:hover{
+        color:red;
+      }
+
+      span{
+        margin-right: 5px;
+      }
+    }
+  }
+
+}
+
+li.tiptop:hover{
+  background-color: #494a47;
+}
+li.tiptop-menu{
+  .tiptop.dropdown-menu{
+    width: 350px;
+    @media only screen and(max-width:767px) {
+      position: absolute;
+      background-color: #3c3c3c;
+      top: 42px;
+      left: -78px;
+    }
+    &:before {
+      @media only screen and(max-width:767px) {
+        top: -25px;
+        left: -104px;
+      }
+
+   /*   border: 15px solid rgba(255, 255, 255, 0);
+      border-bottom: 15px solid #494a4a;*/
+    }
+    @media only screen and(max-width:479px) {
+      position:static;
+      width: 100%;
+    }
+  }
+
+  li {
+    display: block;
+    width: 100%;
+    .img-box-mes-item{
+      @media only screen and(max-width:479px) {
+        display: none;
+      }
+    }
+    .f-right {
+      @media only screen and(max-width:479px) {
+        width: 100%;
+      }
+    }
+  }
+
+}
+.tiptop{
+  background-color: #3c3c3c;
+  position: absolute;
+  z-index: 2000;
+  top: 55px;
+  left:-3px;
+  display: none;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: -30px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #3c3c3c;
+  }
+  li{
+    width: 340px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #494a4a;
+  }
+  .img-box-mes-item {
+    width: 68px;
+    height: 92px;
+    border: 4px solid #585858;
+    margin-right: 10px;
+    overflow: hidden;
+    float: left;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .f-right {
+    float: right;
+    width: 66%;
+    @media only screen and (max-width: 767px){
+     border-top:none;
+      border-bottom: none;
+    }
+    a.btn{
+      border:1px solid white !important;
+      background-color: transparent;
+      color:white;
+      font-size: 11px;
+      padding: 3px 13px!important;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      @include transition(all .3s ease-in-out);
+      &:hover{
+        background-color: $color-blue-font!important;
+      }
+    }
+
+  }
+  h3.name{
+    font-size: 11px;
+    font-family: $font-bold;
+    color:white;
+    margin-bottom: 8px;
+  }
+  p.status{
+    font-size: 10px;
+    color:#969696;
+    margin-bottom: 15px;
+  }
+
+  p.comment{
+    color:white;
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+}
+.navbar-nav>li{
+  position: relative;
+}
+/*------MAN-PAGE-CORRESPONDANCE.SCSS----------*/

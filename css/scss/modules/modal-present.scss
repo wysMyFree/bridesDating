@@ -1,0 +1,402 @@
+/*------MODAL-PRESENT.SCSS----------*/
+
+@import "../variables.scss";
+@import "modal-gift-form.scss";
+.modal-dialog.modal-lg.big-lg {
+  width: 90%;
+  max-width: 1240px;
+}
+.flex-wrap-modal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  @media (max-width: 1275px){
+    flex-wrap: wrap;
+  }
+}
+.modal-item.main {
+  width: 100%;
+
+  .invie-to{
+    padding-top:10px;
+    @media (max-width: 661px){
+      font-size: 26px;
+    }
+  }
+}
+.modal-item.aside{
+  @media only screen and(max-width: 1275px){
+    margin: 0 auto;
+  }
+}
+.present-content {
+
+  .nav-pills>li {
+    @media only screen and(max-width: 479px){
+      float:none;
+    }
+  }
+}
+
+.scrollbar-inner{
+  overflow: hidden;
+  max-height: 422px;
+  min-height: 335px;
+
+}
+
+.present-tabs{
+  .tab-pane{
+
+  }
+
+
+li{
+  .glyphicon{
+    margin-right: 5px;
+  }
+  a{
+    font-family: $font-normal;
+    font-size: $font-size-sm;
+    color: $color-grey-line;
+    border: none;
+    @include transition(all .3s ease-in-out);
+    &:hover{
+      background-color: transparent;
+      color:$color-blue-font;
+
+    }
+  }
+  @media (max-width: 847px){
+    float:none;
+    background-color: transparent!important;
+  }
+}
+  .nav>li>a:hover{
+    background-color:transparent;
+    color:$color-blue-font;
+
+    &:hover{
+      color:$color-blue-font;
+    }
+  }
+  li.active>a{
+    color:$color-green;
+    background-color: $color-grey;
+    @media only screen and(max-width: 847px){
+      background-color:transparent;
+      border: none;
+      &:focus{
+        background-color: white;
+      }
+    }
+    &:focus{
+      color:$color-green;
+      background-color: $color-grey;
+      @media only screen and(max-width: 847px){
+        background-color: white;
+        border:none;
+      }
+
+    }
+  }
+
+}
+
+.present-content{
+  border: 1px solid #D5D5D5;
+  border-top: none;
+  .active {
+    background-color: $color-grey;
+  }
+  .nav-pills{
+    padding: 12px 4px;
+    border-bottom: 1px solid #B8B7B9;
+    margin-bottom: 15px;
+
+    li{
+      a{
+        font-size: $font-size-xsm;
+        padding: 10px 8px;
+      }
+    }
+  }
+}
+
+/*-----------GIFT-----------------*/
+.gift-wrapper{
+  display: flex;
+  padding-right: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  @media only screen and(max-width: 661px){
+    justify-content: center;
+  }
+}
+.gift{
+  box-sizing: border-box;
+  padding: 8px;
+  position: relative;
+  border: 1px solid $color-grey;
+  cursor: pointer;
+  width: 188px;
+
+
+  &:hover .event-present{
+    top: 220px;
+    display: block;
+    box-sizing: border-box;
+    width: 188px;
+    border: 1px solid $color-blue-font;
+    border-top:none;
+    padding: 8px;
+    background-color: #e9f3f5;
+    left:-1;
+  }
+  &:hover{
+    border: 1px solid $color-blue-font;
+    background-color: #e9f3f5;
+  }
+  img{
+    height: 175px;
+  }
+}
+.event-present{
+  top: 220px;
+  box-sizing: border-box;
+  text-align:left;
+  font-size: 12px;
+  margin-top: 15px;
+  padding: 8px;
+  width: 188px;
+  display: none;
+  position: absolute;
+  border: 1px solid $color-grey;
+  z-index: 3000;
+  left:-1px;
+
+
+  a.btn{
+    padding: 6px 6px;
+    border:none;
+    background-color: $color-green;
+    color: white;
+    vertical-align: top;
+    height: 32px;
+    &:hover{
+      background-color:#4F9F11;
+    }
+  }
+
+
+}
+.form-group.number.left-number.cart-number{
+  float: none;
+  max-width:39px;
+  display: inline-block;
+  span{
+    color:$color-grey-line;
+  }
+  input{
+    padding: 0;
+  }
+  .min-up-btn,.min-down-btn{
+    width:13px;
+    right: 4px;
+    top:2px;
+  }
+  .min-down-btn{
+    top:14px;
+  }
+  .form-control{
+    height: 29px;
+    border-radius:0;
+    display: inline-block;
+    margin-top: 1px;
+  }
+}
+.name-gift{
+  text-align: center;
+  padding-top:15px;
+  position: relative;
+  h3{
+    color:$color-blue-font;
+    font-size: $font-size-xsm;
+  }
+  span{
+    color:red;
+    font-size:$font-size-xxs;
+  }
+}
+
+
+/*----------------------------------*/
+/*---------------CART-----------------*/
+.cart{
+  background-color: $color-blue-font;
+  padding: 15px;
+  color:white;
+  font-family: $font-normal;
+span.glyphicon-gift{
+  font-size: 44px;
+  float: left;
+  margin: 0 10px;
+  vertical-align: baseline;
+}
+
+p{
+  font-size: $font-size-xsm;
+  font-family: $font-light;
+}
+  h3{
+    font-size: $font-size-md;
+    padding-top: 5px;
+  }
+  a.btn {
+    background: #57B711;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    margin: 19px 0 0 0;
+    float: right;
+    font-family:$font-normal;
+    @include transition(all .3s ease-in-out);
+
+    &:hover{
+      background: #4b9711;
+    }
+  }
+}
+.my-cart {
+  padding: 15px 0;
+  border-top:1px solid white;
+  border-bottom: 1px solid white;
+  clear: both;
+  margin-top: 15px;
+  @media only screen and (max-width: 479px){
+    padding: 15px 0;
+  }
+
+  .item-cart{
+    display: block;
+    margin-bottom: 20px;
+    @media only screen and (max-width: 479px){
+      display: block;
+      margin-bottom: 20px;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      padding: 10px;
+    }
+
+    a{
+      color:white;
+      text-decoration: none;
+    }
+
+      .cart-center{
+        width: 50%;
+        display: inline-block;
+        @media (max-width: 390px){
+          width: 62%;
+        }
+      }
+      h3{
+        font-family: $font-bold;
+        font-size: $font-size-xsm;
+        padding-top: 0;
+      }
+      span{
+        font-size: $font-size-xxs;
+      }
+
+      .wrap-right{
+        float:right;
+        margin-left: 15px;
+        padding-right: 21px;
+        position: relative;
+
+        @media only screen and (max-width: 479px){
+          float:none;
+          display: block;
+          width: 71px;
+          margin-left:0;
+          margin-top: 10px;
+        }
+
+        .close-item{
+          position: absolute;
+          right: 0;
+          top:5px;
+          span{
+            font-size: 18px;
+              &:hover{
+                color:#F18F8F;
+              }
+          }
+        }
+      }
+      img{
+        float:left;
+        margin-right: 15px;
+
+      }
+
+  }
+
+}
+/**************************************/
+
+.total{
+  font-family: $font-light;
+  margin-top:15px;
+}
+.total-credit{
+  float: right;
+  font-family: $font-normal;
+}
+.yuo-credit{
+  padding-left:30px ;
+  color:black;
+  font-size: 14px;
+  font-family:$font-normal;
+  margin-top: 20px;
+  line-height: 21px;
+  margin-bottom: 30px;
+  a{
+    display: block;
+    color:$color-blue-font;
+  }
+  }
+.zero-credit{
+  color:red;
+  font-family: $font-bold;
+}
+.have-credit{
+  color:$color-green;
+  font-family:$color-green;
+}
+.jq-number__field {
+  border-radius: 0;
+}
+
+input.my-number{
+  @media only screen and (max-width: 479px){
+    margin: 0;
+  }
+}
+
+.nav-tabs>li:focus{
+  outline: none;
+  border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: #16b4dc;
+  cursor: pointer;
+  background-color: #F6F6F6;
+  border: none;
+  border: 1px solid #D5D5D5;
+  border-bottom: none;
+}
+
+/*-----END-MODAL-PRESENT.SCSS----------*/

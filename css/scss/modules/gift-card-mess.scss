@@ -1,0 +1,153 @@
+/*------GIFT-CARD-MESS.SCSS----------*/
+@import "../variables.scss";
+.img-wrap{
+  position: relative;
+  margin: 0 auto;
+}
+.gift.card-item{
+  box-sizing: border-box;
+  padding: 6px;
+  width: 33.33%;
+  border: none;
+  @media (max-width: 871px){
+    width: 255px;
+    margin: 0 auto;
+  }
+  &:hover .for-hover{
+    opacity: .4;
+  }
+  &:hover .center-hover{
+    opacity: 1;
+  }
+    &:hover{
+      border:none;
+    }
+  img{
+    height: auto;
+  }
+  img.active{
+    border:4px solid #64b118;
+  }
+  .free{
+    color:green;
+  }
+  span.selected {
+    position: absolute;
+    display: block;
+    font-size: 14px;
+    color: white;
+    background: #64b118;
+    padding: 3px;
+    right: 0;
+    bottom: 0;
+    font-family: "OpenSansBoldItalic";
+    display: none;
+  }
+  .name-gift {
+    padding-top: 9px;
+  }
+}
+.for-hover {
+  position: absolute;
+  width: 100%;
+  background: rgb(33,139,232);
+  opacity: 0;
+  height: 100%;
+  top: 0;
+  @include transition(all .3s ease-in-out);
+  }
+.center-hover{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  text-align: center;
+  background: #16b4dc;
+  border-radius: 50%;
+  padding-top: 23px;
+  margin: 0 auto;
+  color:white;
+  z-index: 100;
+  left: 35%;
+  top: 27px;
+  font-family: "OpenSansBoldItalic";
+  @include transition(all .4s ease-in-out);
+  span {
+    font-family: $font-light;
+    font-style: italic;
+  }
+}
+.gift-wrapper-mess {
+  padding: 0 8px;
+ margin-top: 15px;
+  overflow: hidden;
+  .scrollbar-inner{
+    min-height: 200px;
+  }
+  .scroll-textarea {
+    border: 1px solid #F7EEA1;
+    border-top-color: #F7EEA1;
+  }
+}
+textarea.mess-gift {
+  width: 100%;
+  border: 1px solid #f7eea1;
+  background-color: #f7eea1;
+  resize: none;
+  color: #b01919;
+  font-size: 18px;
+  font-family: "OpenSansLight";
+  font-weight: 400;
+  font-style:italic;
+  padding: 7px 39px;
+  height: 200px;
+  outline: 0;
+  overflow: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+ /* background-image: -webkit-linear-gradient(left,#fff 15px,transparent 15px),-webkit-linear-gradient(right,#fff 15px,transparent 15px),-webkit-linear-gradient(white 35px,#f7eea1 35px,#f7eea1 36px,#FFE 36px);
+  background-image: -moz-linear-gradient(left,#fff 15px,transparent 15px),-moz-linear-gradient(right,#fff 15px,transparent 15px),-moz-linear-gradient(white 30px,#f7eea1 30px,#f5eba2 31px,#fff 31px);
+  background-image: -ms-linear-gradient(left,#fff 15px,transparent 15px),-ms-linear-gradient(right,#fff 15px,transparent 15px),-ms-linear-gradient(white 30px,#f7eea1 30px,#f7eea1 31px,#fff 31px);
+  background-image: -o-linear-gradient(left,#fff 15px,transparent 15px),-o-linear-gradient(right,#fff 15px,transparent 15px),-o-linear-gradient(white 30px,#f7eea1 30px,#f7eea1 31px,#fff 31px);
+  background-image: linear-gradient(left,#fff 15px,transparent 15px),linear-gradient(right,#fff 15px,transparent 15px),linear-gradient(white 30px,#f7eea1 30px,#f7eea1 31px,#fff 31px);
+  background-size: 100% 100%,100% 100%,100% 38px;
+  background-repeat: repeat-y;*/
+  box-shadow: inset 0 1px 2px rgba(247,238,161,.3);
+  background-color:#f5eba2 ;
+  line-height: 36px;
+}
+.tab-content.present-group-content {
+  padding-bottom: 20px;
+}
+textarea.mess-gift.scrollbar-inner {
+  padding: 0 24px;
+  height: 200px;
+}
+.tab-content.present-group-content {
+  padding: 0 15px;
+  padding-bottom:15px;
+
+  h3.title-ledies-group {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    @media (max-width: 767px){
+      font-size: 18px;
+      margin-top: 21px;
+      margin-bottom: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #ADADAD;
+    }
+
+
+  }
+  span.line-decor {
+    width: 121px;
+    @media (max-width: 767px){
+      display: none;
+    }
+  }
+}
+/*-----END-GIFT-CARD-MESS.SCSS----------*/
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Present Lady</title>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css"/>
+    <link rel="stylesheet" href="css/jquery.scrollbar.css"/>
+    <link rel="stylesheet" href="css/chosen.min.css"/>
+    <link rel="stylesheet" href="css/star-rating.min.css"/>
+    <link rel="stylesheet" href="css/style-min.css"/>
+
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.61)">
+
+<h1>Modal windowm loading</h1>
+<div class="modal fade bs-example-modal-lg " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModalchat">
+    <div class="modal-dialog modal-lg photo-popup">
+        <div class="modal-content invite-contetnt">
+            <div class="container-fluid">
+                <div class="slick-wrap2">
+                    <div><img src="img/popup.jpg" alt="daryna" class="pop-up-image"></div>
+                    <div><img src="img/popup.jpg" alt="daryna" class="pop-up-image"></div>
+                    <div><img src="img/popup.jpg" alt="daryna" class="pop-up-image"></div>
+                </div>
+                <div class="pop-up-footer clearfix">
+                   <div class="name-girl">
+                       <h3>Olga Kachanova</h3>
+                       <span class="id-girl">ID: 2659</span>
+                   </div>
+                    <div class="rate clearfix">
+                       <h3>Rate the photo</h3>
+                        <input id="input-21e" value="0" type="number" class="rating form-control hide" min=0 max=5 step=0.5 data-size="xs" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-datepicker-1.5.0-dist/js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-slider.js"></script>
+<script src="js/jquery.scrollbar.min.js"></script>
+<script src="js/chosen.jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/star-rating.min.js"></script>
+
+<script>
+    $('.slick-wrap2').slick({
+        speed: 300,
+        autoplay:true,
+        arrows:true,
+        focusOnSelect:true,
+        infinite:true,
+        adaptiveHeight:true,
+        fade:true,
+        nextArrow:'<span class="next"><i class="fa fa-angle-right"></i></span>',
+        prevArrow:'<span class="prev"><i class="fa fa-angle-left"></i></span>'
+    });
+    $("#input-21e").rating({
+        starCaptions: function(val) {
+                return val+'/5';
+        }
+    });
+    $('#myModalchat').modal('show');
+</script>
+<script src="js/common.js"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

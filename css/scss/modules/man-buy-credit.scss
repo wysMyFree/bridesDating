@@ -1,0 +1,151 @@
+/*------MAN-BUY-CREDIT.SCSS----------*/
+
+@import "../variables.scss";
+.man-bay-credit{
+
+  p{
+    line-height: 21px;
+    font-size: 14px;
+
+  }
+
+  .form-width{
+    max-width: 100%;
+  }
+
+  .flex-item.form-width{
+
+    @media only screen and(max-width:767px) {
+      max-width: 318px;
+      padding: 0;
+      margin: 10px auto;
+    }
+  }
+}
+
+.exact-amount {
+  font-size: 28px;
+  margin-top: 15px;
+  input{
+    border: none;
+    background-color: #e1f3f8;
+    height: 55px;
+    width: 110px;
+    padding:4px;
+
+  }
+  td {
+    width: 50px;
+    text-align: center;
+  }
+  td.input{
+    width: 111px;
+  }
+  label{
+    font-size: 14px;
+    display: inherit;
+    padding-top: 6px;
+  }
+}
+#price{
+  color: $color-blue-font;
+  font-family: $font-bold;
+}
+input#amount{
+  margin-left: 0;
+}
+.border{
+  margin-top: 20px;
+  border-top:1px solid $color-grey-line;
+  margin-bottom: 50px;
+
+}
+
+  input.discount{
+    margin-top: 15px;
+    width: 70%;
+    height: 35px;
+  }
+  label.discount{
+    font-size: 14px;
+    color:#939393;
+  }
+
+  .total.my-total{
+    padding: 15px;
+    background-color: #ebf4f5;
+
+    h3{
+      color:$color-blue-font;
+      font-family: $font-bold;
+      margin-bottom: 15px;
+    }
+    ul li:last-child{
+      font-family: $font-bold;
+    }
+    ul li{
+      display: block;
+      width: 100%;
+      color: black;
+      padding: 5px 0;
+
+      .total-credit, .total-discount,
+      .grand-total {
+        float:right;
+      }
+      .grand-total{
+        font-family: $font-bold;
+      }
+
+    }
+
+    a.btn{
+      color:white;
+      background-color: $color-green;
+      border:none;
+      float:right;
+      margin-top: 20px;
+      padding: 11px 12px;
+      @include transition(all .3s ease-in-out);
+
+
+      &:hover{
+        background-color: #006600;
+      }
+    }
+  }
+
+
+
+.man-bay-credit-pay{
+  .cvv-wrap{
+    margin-top:0;
+    @media only screen and(max-width:479px) {
+      width: auto;
+    }
+    span.glyphicon.glyphicon-question-sign {
+      @media only screen and(max-width:479px) {
+        float:none;
+      }
+    }
+
+  }
+  input{
+    border-radius: 0;
+  }
+  .form-control {
+    height: 33px;
+
+  }
+
+}
+.form-group label {
+  padding-bottom: 10px;
+}
+
+.link-mcafee, .link-norton {
+  padding:0;
+  max-width: 120px;
+}
+
+/*-----END-MAN-BUY-CREDIT.SCSS----------*/

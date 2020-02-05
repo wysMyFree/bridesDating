@@ -1,0 +1,261 @@
+/*------LADY-PROFILE-CORRESPONDANCE-INBOX.SCSS----------*/
+
+@import "../variables.scss";
+
+.count{
+  text-align: center;
+  color: #d6d6d6;
+  font-size: 24px;
+  span {
+    display: block;
+    padding-right: 0;
+    font-size: 12px;
+  }
+}
+.nav-tabs>li{
+  @media only screen and(max-width:1056px) {
+    float:none;
+  }
+}
+.nav.nav-tabs.tabs-inbox {
+  li {
+    span{
+      padding-right: 10px;
+    }
+    span.fa{
+      font-size: 22px;
+    }
+  }
+  li>a{
+    background-color: #f4f4f4;
+    border-radius: 0;
+    color:$color-grey-font2;
+    &:active{
+      outline: none;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  li.active>a{
+    border-radius: 0;
+    border-top:2px solid $color-blue-font;
+    background-color: white;
+    &:active{
+      outline: none;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
+
+}
+
+.tab-content-inbox{
+  padding: 10px 0 10px 0;
+}
+
+.message-item{
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  @include transition(all .3s ease-in-out);
+  @media only screen and(max-width:1056px) {
+    align-items: stretch;
+  }
+  @media only screen and(max-width:847px) {
+      flex-wrap: wrap;
+  }
+   @media only screen and(max-width:479px) {
+      justify-content: flex-start;
+  }
+
+  &:hover{
+      border: 1px solid #4ec4e3;
+      background-color: #f1f6f7;
+    }
+
+  
+  .from-mess{
+    @media only screen and(max-width:847px) {
+     width: 100%;
+      order:2;
+      margin-top: 15px;
+
+    }
+    a{
+      display: inline-block;
+      color:$color-blue-font;
+      font-size: 24px;
+      margin-bottom: 10px;
+     &:hover span sup{
+       text-decoration: none!important;
+     }
+    }
+    p{
+      font-size: 14px;
+      font-family: "OpenSansBoldItalic";
+      font-weight: 300;
+      line-height: 24px;
+      color:#606060;
+    }
+  }
+
+  .viev{
+    min-width: 226px;
+    text-align: right;
+
+    @media only screen and(max-width:1056px) {
+      min-width: 60px;
+    }
+    @media only screen and(max-width:847px) {
+      margin: 7px auto;
+      text-align: center;
+      order:1;
+      min-width: 156px;
+    }
+    .count, a.btn{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      @media only screen and(max-width:1056px) {
+        margin-right:0;
+        margin-bottom: 10px;
+      }
+
+    }
+    a.btn {
+      border: none;
+      font-size: 25px;
+      border-radius: 50%;
+    }
+    .delete-mess{
+      background-color: #d6d6d6;
+      text-align: center;
+      /* padding: 5px; */
+      width: 45px;
+      height: 45px;
+      padding-left:9px;
+      color: white;
+      padding-top: 7px;
+      @include transition(all .3s ease-in-out);
+      &:hover{
+        background: red;
+      }
+    }
+    .viev-mess{
+      background: #16b4dc;
+      color: #fff;
+      width: 45px;
+      padding-left: 10px;
+      padding-top: 5px;
+      height: 45px;
+      @include transition(all .3s ease-in-out);
+      &:hover{
+        background: $color-green;
+      }
+    }
+
+
+  }
+}
+
+.message-item.chat-history {
+  @media only screen and(max-width:847px) {
+    flex-wrap: nowrap;
+  }
+  @media only screen and(max-width:479px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .img-box-mes-item{
+    @media only screen and(max-width:479px) {
+     margin: 0 7px 7px;
+    }
+
+
+  }
+  .from-mess{
+    flex-basis: 100%;
+    @media only screen and(max-width:847px) {
+      order:1;
+    }
+    @media only screen and(max-width:479px) {
+      order:2;
+      flex-basis:inherit;
+    }
+  }
+  .count {
+    text-align: left;
+    font-size: 18px;
+     span{
+       display: inline-block;
+     }
+  }
+  .viev{
+    @media only screen and (max-width: 1056px)
+    {
+      min-width:129px;
+    }
+    @media only screen and(max-width:479px) {
+      text-align: left;
+      min-width: 80px;
+    }
+
+  }
+
+}
+
+div.panel-collapse p:nth-child(odd){
+background-color: #ededed;
+}
+.panel-collapse{
+
+  p.item-history{
+    margin: 15px 0;
+    font-family: $font-normal;
+    font-style: normal;
+  }
+}
+
+
+span.date-massage{
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #8C8C8C;
+  background: #8C8C8C;
+  color: white;
+  width: 68px;
+  text-align: center;
+  font-family: $font-normal;
+  font-style: normal;
+}
+
+.chat-history{
+  .viev {
+    min-width: 117px;
+    text-align: right;
+  }
+}
+.img-box-mes-item {
+  min-width: 98px;
+  height: 98px;
+  padding: 3px;
+  border: 1px solid #16B4DC;
+  margin-right: 20px;
+  @media only screen and(max-width:479px) {
+    margin: 0 auto;
+  }
+  img{
+    width: 88px;
+    height: 88px;
+  }
+}
+/*-----END-LADY-PROFILE-CORRESPONDANCE-INBOX.SCSS----------*/

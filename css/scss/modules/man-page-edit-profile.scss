@@ -1,0 +1,410 @@
+/*------MAN-PAGE-EDIT-PROFILE.SCSS----------*/
+
+@import "../variables.scss";
+
+.title-edit-profile{
+  color:#1192b2;
+  font-size: $font-size-sm;
+}
+
+.my-progress{
+  padding: 25px;
+  background-color:$color-grey-dark;
+  margin:20px 0;
+
+  .progress{
+    height: 25px;
+    margin: 0;
+    background-image: none;
+    border-radius: 0;
+    background: white;
+    .progress-bar{
+      background-image: none;
+      background-color: $color-blue-font;
+      padding-top: 3px;
+    }
+  }
+
+}
+
+.nav-tabs.tabs-edit-profile {
+margin-top: 20px;
+li.active{
+  border: none;
+
+}
+  li>a {
+    color: black;
+    font-size: 14px;
+
+  }
+  li.active>a{
+    color:#1192b2;
+    background: #f9f9f9;
+    border: none;
+
+  }
+li {
+  span{
+    width: 20px;
+    height: 22px;
+    /* margin-top: -5px; */
+    display: inline-block;
+    vertical-align: text-bottom;
+
+    a{
+      font-size: 14px;
+      color: black;
+    }
+  }
+  span.my-up-ico{
+    background: url(../img/tabs-ico.png) 1px 3px no-repeat;
+  }
+  span.my-add-ico{
+    background: url(../img/tabs-ico.png) -197px 3px no-repeat;
+  }
+  span.my-acc-ico{
+    background: url(../img/tabs-ico.png) -462px 3px no-repeat;
+  }
+
+}
+
+
+li>a{
+  padding-left: 35px;
+ }
+
+}
+
+.tab-content.tabs-edit-profile {
+  background: #f9f9f9;
+  position: relative;
+
+}
+.my-panel{
+  font-family:$font-normal;
+  text-align: center;
+  padding: 60px 0;
+  h1{
+    font-size: 27px;
+    color:black;
+    margin-top:0;
+    @media only screen and(max-width:479px) {
+      font-size: 18px;
+    }
+  }
+
+  p{
+    font-size: 14px;
+    color: #b0afaf;
+    width: 300px;
+    margin: 0 auto;
+    line-height: 21px;
+    margin-bottom: 25px;
+    @media only screen and(max-width:479px) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  a.btn{
+    border:none;
+    color:white;
+    background: $color-green;
+    padding: 10px 23px;
+    font-family: $font-bold;
+    font-size: 14px;
+    @include transition(all .3s ease-in-out);
+
+    &:hover {
+      transform: Scale(.9,.9);
+    }
+  }
+}
+.my-panel.panel-view-profile {
+  background: #f6f9fa;
+  padding: 40px 0;
+  border: 2px dashed #30b5ff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  a.btn {
+    background-color: #85a4d3;
+  }
+}
+.top-view-profile {
+  display: block;
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  top: -24px;
+  color: #16B4DC;
+}
+
+.form-change{
+
+  padding-top: 35px;
+  @media only screen and(max-width:991px) {
+   width: 380px;
+    margin: 0 auto;
+  }
+
+  @media only screen and(max-width:479px) {
+width: 100%;
+  }
+  .f-right {
+    @media only screen and (max-width: 767px)
+    {
+      float:right;
+      padding: 0;
+      border-top:none;
+      border-bottom:none;
+    }
+    @media only screen and(max-width:390px) {
+      float:none;
+    }
+
+  }
+  a.btn{
+    font-size: 14px;
+    padding: 7px 50px;
+    background-color: #57B711;
+    color: white;
+    float: right;
+    border:1px inset transparent;
+
+    @include transition(all .3s ease-in-out);
+
+    &:hover{
+      background-color: #4E9C11;
+      border:1px inset white;
+    }
+  }
+  h1{
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 24px;
+    color: #4A96E4;
+    margin-bottom: 20px;
+
+  }
+  .form-group{
+    position: relative;
+    padding: 0 15px;
+    @media only screen and(max-width:390px) {
+    }
+
+     label{
+          @media only screen and(max-width:390px) {
+            display: block;
+            margin: 0;
+            text-align: left;
+      }
+    }
+    input {
+      @media only screen and(max-width:390px) {
+        margin: 0;
+      }
+    }
+  }
+  span.fa.fa-calendar{
+    position: absolute;
+    right: 24px;
+    top: 5px;
+    @media only screen and(max-width:479px) {
+      top:17px;
+  }
+    @media only screen and(max-width:390px) {
+      top:32px;
+    }
+  }
+  .jq-selectbox.jqselect.my-list {
+    width: 200px;
+    text-align: left;
+    @media only screen and(max-width:390px) {
+      width: 100%;
+    }
+  }
+  .jq-selectbox__select {
+    width: 200px;
+    box-shadow: none;
+    border: 1px solid #BFBFBF;
+    background-image: none;
+    @media only screen and(max-width:390px) {
+      width: 100%;
+    }
+  }
+
+  input[type="text"]{
+    width: 200px;
+    box-shadow: none;
+    border: 1px solid #BFBFBF;
+    background-image: none;
+    height: 32px;
+    @media only screen and(max-width:390px) {
+      width: 100%;
+    }
+  }
+.wrap-radio{
+  text-align: center;
+  width: 200px;
+span{
+  margin-top: 3px;
+  display: inline-block;
+  font-weight: bold;
+  @include transition(all .3s ease-in-out);
+
+
+}
+  .radio-inline{
+    padding-left: 0;
+
+    span{
+      &:hover{
+        color:$color-blue-font;
+      }
+    }
+  }
+
+}
+
+
+
+  span.flag{
+    display: inline-block;
+    /* padding-top: 1px; */
+    position: relative;
+    top: 3px;
+    left: -3px;
+  }
+  span.flag.flag-ru {background-position: -25px -120px; cursor: pointer;}
+  span.flag.flag-gb {background-position: -175px -45px; cursor: pointer;}
+  span.flag.flag-it {background-position: -50px -75px; cursor: pointer;}
+  span.flag.flag-es {background-position: -50px -45px;cursor: pointer;}
+
+
+
+
+}
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom {
+  z-index: 2500!important;
+}
+.jq-radio.checked .jq-radio__div {
+  width: 10px;
+  height: 10px;
+  margin: 2px 0 0 2px;
+  border-radius: 50%;
+  background: #4A96E4;
+  box-shadow: inset 1px 1px 1px rgb(22, 180, 220);
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+  width: 12px;
+  height: 12px;
+  margin: 1px 0 0 1px;
+  border-radius: 2px;
+  background: #4A96E4;
+  box-shadow: inset 0 -3px 6px #4A96E4;
+}
+.flag {
+  width: 25px;
+  height: 15px;
+  background:url(flags.png) no-repeat
+}
+
+.flag.flag-ad {background-position: -25px 0}
+.flag.flag-ag {background-position: -50px 0}
+.flag.flag-ai {background-position: -75px 0}
+.flag.flag-al {background-position: -100px 0}
+.flag.flag-an {background-position: -125px 0}
+.flag.flag-ar {background-position: -150px 0}
+.flag.flag-at {background-position: -175px 0}
+.flag.flag-aw {background-position: -200px 0}
+.flag.flag-ba {background-position: -225px 0}
+.flag.flag-bb {background-position: 0 -15px}
+.flag.flag-be {background-position: -25px -15px}
+.flag.flag-bg {background-position: -50px -15px}
+.flag.flag-bm {background-position: -75px -15px}
+.flag.flag-bo {background-position: -100px -15px}
+.flag.flag-br {background-position: -125px -15px}
+.flag.flag-bs {background-position: -150px -15px}
+.flag.flag-by {background-position: -175px -15px}
+.flag.flag-bz {background-position: -200px -15px}
+.flag.flag-ca {background-position: -225px -15px}
+.flag.flag-ch {background-position: 0 -30px}
+.flag.flag-cl {background-position: -25px -30px}
+.flag.flag-co {background-position: -50px -30px}
+.flag.flag-cr {background-position: -75px -30px}
+.flag.flag-cu {background-position: -100px -30px}
+.flag.flag-cz {background-position: -125px -30px}
+.flag.flag-de {background-position: -150px -30px}
+.flag.flag-dk {background-position: -175px -30px}
+.flag.flag-dm {background-position: -200px -30px}
+.flag.flag-do {background-position: -225px -30px}
+.flag.flag-ec {background-position: 0 -45px}
+.flag.flag-ee {background-position: -25px -45px}
+.flag.flag-fi {background-position: -75px -45px}
+.flag.flag-fk {background-position: -100px -45px}
+.flag.flag-fo {background-position: -125px -45px}
+.flag.flag-fr {background-position: -150px -45px}
+.flag.flag-gd {background-position: -200px -45px}
+.flag.flag-gf {background-position: -225px -45px}
+.flag.flag-gi {background-position: 0 -60px}
+.flag.flag-gl {background-position: -25px -60px}
+.flag.flag-gp {background-position: -50px -60px}
+.flag.flag-gr {background-position: -75px -60px}
+.flag.flag-gt {background-position: -100px -60px}
+.flag.flag-gy {background-position: -125px -60px}
+.flag.flag-hn {background-position: -150px -60px}
+.flag.flag-hr {background-position: -175px -60px}
+.flag.flag-ht {background-position: -200px -60px}
+.flag.flag-hu {background-position: -225px -60px}
+.flag.flag-ie {background-position: 0 -75px}
+.flag.flag-is {background-position: -25px -75px}
+.flag.flag-it {background-position: -50px -75px}
+.flag.flag-jm {background-position: -75px -75px}
+.flag.flag-kn {background-position: -100px -75px}
+.flag.flag-ky {background-position: -125px -75px}
+.flag.flag-lc {background-position: -150px -75px}
+.flag.flag-li {background-position: -175px -75px}
+.flag.flag-lt {background-position: -200px -75px}
+.flag.flag-lu {background-position: -225px -75px}
+.flag.flag-lv {background-position: 0 -90px}
+.flag.flag-mc {background-position: -25px -90px}
+.flag.flag-md {background-position: -50px -90px}
+.flag.flag-me {background-position: -75px -90px}
+.flag.flag-mk {background-position: -100px -90px}
+.flag.flag-mq {background-position: -125px -90px}
+.flag.flag-ms {background-position: -150px -90px}
+.flag.flag-mt {background-position: -175px -90px}
+.flag.flag-mx {background-position: -200px -90px}
+.flag.flag-ni {background-position: -225px -90px}
+.flag.flag-nl {background-position: 0 -105px}
+.flag.flag-no {background-position: -25px -105px}
+.flag.flag-pa {background-position: -50px -105px}
+.flag.flag-pe {background-position: -75px -105px}
+.flag.flag-pl {background-position: -100px -105px}
+.flag.flag-pm {background-position: -125px -105px}
+.flag.flag-pr {background-position: -150px -105px}
+.flag.flag-pt {background-position: -175px -105px}
+.flag.flag-py {background-position: -200px -105px}
+.flag.flag-ro {background-position: -225px -105px}
+.flag.flag-rs {background-position: 0 -120px}
+.flag.flag-se {background-position: -50px -120px}
+.flag.flag-si {background-position: -75px -120px}
+.flag.flag-sk {background-position: -100px -120px}
+.flag.flag-sm {background-position: -125px -120px}
+.flag.flag-sr {background-position: -150px -120px}
+.flag.flag-sv {background-position: -175px -120px}
+.flag.flag-tc {background-position: -200px -120px}
+.flag.flag-tt {background-position: -225px -120px}
+.flag.flag-ua {background-position: 0 -135px}
+.flag.flag-us {background-position: -25px -135px}
+.flag.flag-uy {background-position: -50px -135px}
+.flag.flag-va {background-position: -75px -135px}
+.flag.flag-vc {background-position: -100px -135px}
+.flag.flag-ve {background-position: -125px -135px}
+.flag.flag-vg {background-position: -150px -135px}
+.flag.flag-vi {background-position: -175px -135px}
+
+/*-----END-MAN-PAGE-EDIT-PROFILE.SCSS----------*/

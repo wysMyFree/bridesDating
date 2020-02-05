@@ -1,0 +1,231 @@
+@import "../variables.scss";
+.page-header.admin-panel{
+  margin: 0;
+  padding:15px 20px;
+  font-size: ms(9);
+  text-align: left;
+  .hello-name{
+    margin: 0;
+    float:left;
+  }
+.pres-delivery{
+margin-top:9px;
+  float:right;
+  font-size: 14px;
+  a{
+    color:#757575;
+
+    .badge{
+      background-color: red;
+      margin-left:15px;
+    }
+  }
+}
+
+}
+.admin-panel{
+  padding: 30px 0;
+  font-family: $font-normal!important;
+
+  .menu-drop{
+    margin-bottom: 0;
+  }
+
+  .catalog, .correspondence,.gifts{
+    margin-bottom: 30px;
+  }
+  .dashboard_h2{
+    font-size: 24px;
+    color: #757575;
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+  .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+    outline: none;
+    background-image: none;
+    border:none;
+    background: transparent;
+  }
+  li.menu_item .dropdown-menu li a{
+    color: black;
+
+    &:hover{
+      outline: none;
+      background-image: none;
+      border:none;
+      color: #1192b2;
+    }
+    &:focus{
+      outline: none;
+      background-image: none;
+      border:none;
+    }
+  }
+  li.menu_item .dropdown-menu li{
+    position: relative;
+      &:before{
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          font-family: FontAwesome;
+          content:"\f061";
+       }
+    &:hover{
+      color:#1192b2;
+    }
+  }
+  li.menu_item{
+    font-size: 18px;
+    padding-bottom: 11px;
+    position: relative;
+    display: block;
+    clear: both;
+
+    &:focus{
+      outline: none;
+      background-image: none;
+      border:none;
+    }
+  }
+  li.menu_item a{
+    color: #1192b2;
+    background: #fff;
+    text-decoration: none;
+    display: block;
+
+    &:hover{
+      background: transparent;
+    }
+    &:focus{
+      background: transparent;
+    }
+  }
+  .menu_item a{
+    text-decoration: none;
+  }
+  .color_grey{
+    color: #757575;
+  }
+  .dropdown-menu.ladies{
+    position: relative;
+    border: none;
+    box-shadow: none;
+  }
+  .dropdown-toggle.btn-default{
+    color: #1192b2;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: none;
+    background-image: none;
+
+    &:focus{
+      color: #1192b2;
+
+    }
+  }
+
+  .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default.btn-focus{
+    background: #fff;
+    color: #1192b2;
+  }
+  .color_caret{
+    color: #000000;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  h3.statistic_h3{
+    color: #16b4dc;
+    font-size: 51px;
+
+    @media only screen and(max-width: 991px){
+      font-size:33px;
+    }
+  }
+  .container_main{
+    width: 1240px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  .statistic_item{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .ladies_item{
+    color: #757575;
+    font-size: 18px;
+  }
+  .item_p{
+    font-size: 14px;
+    color: #bbbbbb;
+  }
+  .clear{
+    clear: both;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .dashboard_h2.margin0{
+    margin: 0;
+  }
+  .margin0{
+    margin: 0;
+  }
+  .bottom_block.padding0{
+    padding: 0;
+  }
+  .h2_item{
+    margin:0;
+    margin-bottom: 20px;
+  }
+  .new_ladies li{
+    padding: 6px 10px;
+      background-color: #f7f7f7;
+    &:nth-child(odd){
+      background-color: #f9f9f9;
+    }
+  }
+  .new_ladies a{
+    color: #1192b2;
+    font-size: 14px;
+  }
+  .style_span{
+    color: #bbbbbb;
+    float: right;
+  }
+  li.active:hover{
+    background: #dce8f3;
+    text-decoration: none;
+  }
+  li.active:hover a{
+    text-decoration: none;
+    color: #1d2f33;
+  }
+  li.active:hover a span{
+    color: #1d2f33;
+  }
+  li.active:hover{
+    color: #1d2f33;
+  }
+  .menu_item a:focus,.menu_item a:hover {
+    color: #1192B2;
+    text-decoration: none;
+  }
+
+  .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #0d85a4;
+    text-decoration: underline;
+  }
+
+  .wrap-item{
+    padding: 10px 0;
+    display: block;
+    background-color: white;
+    @include transition(all .3s ease-in-out);
+    cursor: pointer;
+
+    &:hover{
+      background-color: #f9f9f9;
+      text-decoration: none;
+    }
+  }
+}

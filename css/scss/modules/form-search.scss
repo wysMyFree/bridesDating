@@ -1,0 +1,86 @@
+/*-------FORM-SEARCH.SCSS--------*/
+@import "../variables.scss";
+form#search-girl{
+
+  @media only screen and(min-width:769px) {
+    display:block!important;
+  }
+  .jq-selectbox__dropdown{
+    z-index: 2500!important;
+  }
+  .jq-selectbox__select-text{
+    color:$color-grey-line;
+  }
+  .jq-number .jq-number__field {
+    width: 66px;
+    border-radius: 0;
+    color:$color-grey-line;
+  }
+
+  select{
+  width: 184px;
+}
+
+
+  input[type="text"]{
+    border-radius:0;
+    color:$color-grey-line;
+    border:1px solid $color-grey-line;
+    height: 32px;
+  }
+
+
+  input.my-number{
+    @media only screen and (max-width: 479px){
+      margin: 0;
+    }
+
+  }
+  span.label-input{
+    padding-bottom: 5px;
+  }
+  .col{
+    margin-bottom: 15px;
+  }
+
+  .invisible-form .wrap-number{
+    margin-bottom: 8px;
+    .jq-number__field {
+      border-radius: 0;
+    }
+  }
+.invisible-form{
+  .jq-selectbox.jqselect.my-list{
+    width: 100%;
+    text-align: left;
+  }
+  input{
+    border-radius: 0;
+  }
+}
+
+}
+
+.jq-selectbox__select{
+  border-radius: 0;
+  background-color: white;
+  background-image: none;
+  &:hover{
+    background-color: white;
+background-image: none;
+  }
+}
+
+.jq-selectbox.jqselect.my-list{
+  width: 184px;
+  text-align: left;
+}
+
+.jq-selectbox__dropdown{
+  border-radius:0;
+  border:none;
+}
+.jq-selectbox__trigger{
+  border-left:none;
+}
+/*------END-FORM-SEARCH.SCSS--------*/

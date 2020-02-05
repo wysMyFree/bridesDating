@@ -1,0 +1,269 @@
+/*------MAN-PAGE-PHONE-CALL.SCSS----------*/
+
+@import "../variables.scss";
+input{
+  padding-left: 7px;
+}
+.phone-calls .nav-pills>li{
+  @media only screen and (max-width: 991px){
+    float:none;
+  }
+
+}
+.form-rezerv{
+
+    margin-top:35px;
+  margin-bottom: 100px;
+
+  .f-right {
+    @media only screen and (max-width: 767px)
+    {
+      float:right;
+      padding: 0;
+      border-top:none;
+      border-bottom:none;
+    }
+
+  }
+label{
+  @media only screen and (max-width: 479px)
+  {
+    margin-bottom: 7px;
+    text-align: center;
+    width: 100%;
+  }
+}
+  h3{
+    font-size: 24px;
+    color:#353535;
+    margin-bottom: 35px;
+  }
+/*----------------!!!!------------------*/
+  .panel-search{
+    background-color: #dbf1f6;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 35px;
+
+    .img-box-mes-item{
+      width: 98px;
+      float:left;
+      margin-right: 15px;
+    }
+
+    .form-group{
+      label{
+        display: block;
+        font-size: 18px;
+        color:#353535;
+        text-align: left;
+        padding-top: 11px;
+        margin-bottom: 11px;
+      }
+      input{
+        height: 35px;
+
+      }
+    }
+  }
+/*-------------------------------------------*/
+  p{
+    font-size: 14px;
+    color: #575757;
+    line-height: 20px;
+  }
+  .title-form-rezerv{
+    color:$color-blue-font;
+    font-size: 36px;
+    margin-top:35px;
+    margin-bottom: 15px;
+    @media only screen and (max-width: 479px)
+    {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+/*--------------------!!!!!-------------------*/
+  .panel-form-rezerv{
+    padding: 35px 15px;
+    background-color: #F4F4F4;
+    margin-bottom: 50px;
+
+    .form-goup{
+      margin-bottom: 30px;
+      position: relative;
+    }
+    span.fa.fa-calendar {
+      position: absolute;
+      right: 9px;
+      top: 12px;
+      @media only screen and (max-width: 479px)
+      {
+        top:45px;
+     }
+
+    }
+    span{
+      color:#6d6d6d;
+      font-size: 14px;
+    }
+    label {
+      color:#6d6d6d;
+      font-size: 16px;
+      padding-top: 11px;
+    }
+    input,select,.group-number, div#gmt-styler{
+      height: 40px;
+      width: 65%;
+      @media only screen and (max-width: 479px)
+      {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    input[type="number"]{
+      width: 100px;
+      height: 40px;
+      @media only screen and (max-width:871px)
+      {
+        width: 67px;
+      }
+    }
+    .f-right.group-number {
+      text-align: right;
+    }
+  }
+/*--------------------------------------*/
+  .jq-number__field {
+    width: 102px;
+    border-radius: 0;
+
+    @media only screen and (max-width:871px)
+    {
+      width:70px;
+    }
+  }
+  .jq-number .jq-number__spin{
+    top:5px;
+  }
+  .jq-selectbox__select{
+    height: 40px;
+    background-image: none;
+    background-color: white;
+    border-radius: 0;
+  }
+  div#gmt-styler {
+    width: 65%;
+  }
+  .jq-selectbox__trigger{
+    border-left:none;
+  }
+
+  /*----------------!!!!!!!!!!!-----------------*/
+
+  .info-time-zone{
+    background-color: #ffffe9;
+    border: 2px dashed $color-blue-font;
+    padding: 15px;
+    margin-bottom: 35px;
+
+    h3{
+      font-size: 18px;
+      color:$color-blue-font;
+      margin-top: 15px;
+      padding-right: 126px;
+      line-height: 21px;
+      margin-bottom: 15px;
+      @media screen and (max-width: 847px) {
+padding-right: 0;
+      }
+    }
+
+    p{
+      color:#939393;
+      font-size:14px;
+      span{
+        color:black;
+        display: block;
+      }
+    }
+
+  }
+  /*---------------------------*/
+
+  /*----------!!!------------------------*/
+
+  .contact-number{
+    h3{
+      font-size: 18px;
+      color:#6d6d6d;
+      margin-bottom: 15px;
+      padding-left: 15px;
+    }
+
+    input{
+      width: 100%;
+    }
+   .email-group{
+     input{
+       width: 65%;
+       float: right;
+
+       @media only screen and (max-width: 479px)
+       {
+         width: 100%;
+       }
+     }
+   }
+
+  }
+
+  /*----------------------------------*/
+
+  .order-phone{
+margin-top: 40px;
+    text-align: right;
+    p{
+      display: inline-block;
+      color:#939393;
+      font-size: 14px;
+
+      a{
+        color:#939393;
+        text-decoration: underline;
+      }
+    }
+    a.btn{
+      background-color:$color-blue-font;
+      color:white;
+      border:none;
+      margin: 15px;
+      margin-right: 0;
+      padding: 10px 18px;
+      font-size: 14px;
+      @include transition(all .3s ease-in-out);
+
+
+      &:hover{
+        background-color: #1696BA;
+      }
+    }
+  }
+
+  h3{
+    color:#353535;
+  }
+  p.how-work{
+    font-size: 16px;
+    color: #696969;
+    line-height: 30px;
+  }
+}
+
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top{
+  z-index:2000;
+}
+div#gmt-styler {
+  z-index: 1!important;
+}
+/*-----END-MAN-PAGE-PHONE-CALL.SCSS----------*/

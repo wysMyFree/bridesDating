@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Invite-to-chat</title>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap-datepicker-1.5.0-dist/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-slider.min.css"/>
+    <link rel="stylesheet" href="css/style-min.css"/>
+
+</head>
+<body>
+<h1>Modal windowm loading</h1>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content invite-contetnt">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 no-padding-r">
+                        <div class="invie-to">
+                            <div class="invite-to-h3">Invite
+                                <div class="invite-link">
+                                    <a href="#0" data-toggle="tooltip"  class="name-pup-up">Daryna</a>
+                                    <div class="my-tooltip">
+                                        <div class="link-girl clearfix">
+                                            <div class="bl">
+                                                <div class="img-box ">
+                                                    <img src="img/girl-list-mini.jpg" alt="item-girl"/>
+                                                </div>
+                                            </div>
+                                            <div class="name-girl">
+                                                <h3 class="item-girl-name">Daryna<sup class="id-girl">(ID:2356)</sup></h3>
+                                                <span class="item-girl-from">25 years, from Lviv</span>
+                                            </div>
+                                            <span class="view-profile"><a href="#0">View Profile</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <sup class="id-girl">(ID:2356)</sup>
+                                to Chat
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <h3 class="title-select-date">Please select a date when you want to chat</h3>
+                            <div class="col-lg-7 col-md-7 col-xs-12 no-padding">
+                                <div class="datepicker-wrap">
+                                    <div id="datepicker" data-date="current"></div>
+                                    <input type="hidden" id="my_hidden_input">
+                                </div>
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" value="12-02-2012" id="datapicker-mobile">
+                                </div>
+                                <h3 class="select-time">Please select the time</h3>
+                                <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <div class="big-day">
+                                    <h3 class="day"> 15</h3>
+                                    <span class="month">january</span>
+                                </div>
+                                <div class="my-time-zone">
+                                    <div class="invite-time">
+                                        12:30 am
+                                    </div>
+                                    <div class="invite-time-zone">
+                                       <h3>My timezone</h3>
+                                        <span>U.S.A. - Honolulu time (-10 GMT)</span>
+                                    </div>
+                                </div>
+                                <div class="lady-time-zone">
+                                    <div class="invite-time">
+                                        00:30 am
+                                    </div>
+                                    <div class="invite-time-zone">
+                                        <h3>Lady timezone</h3>
+                                        <span>Ukraine - Kyiv time (+2 GMT)</span>
+                                    </div>
+                                </div>
+                                <a href="#0" class="btn invite-btn">Invite to Chat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  col-md-4 no-padding-l">
+                        <div class="invite-foto-wrap">
+                            <div class="link-girl clearfix">
+                                <div class="bl">
+                                    <div class="img-box ">
+                                        <img src="img/girl-list-mini.jpg" alt="item-girl"/>
+                                    </div>
+                                </div>
+                                <div class="name-girl">
+                                    <h3 class="item-girl-name">Daryna<sup class="id-girl">(ID:2356)</sup></h3>
+                                    <span class="item-girl-from">25 years, from Lviv</span>
+                                </div>
+                                <span class="view-profile"><a href="#0">View Profile</a></span>
+                            </div>
+                        </div>
+                        <img src="img/chat-profile.jpg" alt="portfolio" class="foto-profile img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-datepicker-1.5.0-dist/js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-slider.js"></script>
+<script src="js/common.js"></script>
+<script>
+    $('#myModal').modal('show');
+
+    $('#datepicker, #datapicker-mobile').datepicker({ });
+    $('#ex1').slider({
+        formatter: function(value) {
+            return 'Current value: ' + value;
+        }
+    });
+
+</script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

@@ -1,0 +1,254 @@
+/*------LADY-ACCOUNT-PAGES.SCSS----------*/
+@import "../variables.scss";
+.menu-drop{
+  margin-bottom:100px;
+  @media only screen and(max-width:767px){
+  display: none;
+    max-width: 300px;
+    margin: 0 auto;
+}
+  @media only screen and(min-width:768px){
+    display: block!important;
+  }
+}
+a.menu-account-btn{
+  margin: 30px auto;
+  width: 90%;
+  border: 1px solid #43B7D9;
+  color: #43B7D9;
+  display: none;
+  outline: none;
+  @include transition(all .3s ease-in-out);
+  @media only screen and(max-width:767px){
+    display: block;
+  }
+
+  &:hover{
+    background-color: rgb(0, 136, 221);
+    border-radius: 4px;
+    color: white;
+  }
+}
+
+.menu-account{
+  margin-top: 40px;
+  min-width: 280px;
+  li.title{
+    background:url("../img/menu-account.png") no-repeat;
+    color:black;
+    font-size: 24px;
+    padding-top: 4px;
+  }
+  li{
+    display: block;
+    padding: 0 35px;
+    margin-bottom: 25px;
+    font-family: $font-normal;
+    font-size:$font-size-xsm;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    a{
+      color:$color-blue-font;
+      font-size: 16px;
+      outline: none;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      @include transition(all .3s ease-in-out);
+
+      &:hover{
+        text-decoration:none;
+        font-family: $font-bold;
+      }
+      &:hover .badge {
+        background: $color-blue-font;
+        color:white;
+      }
+      &:hover .badge.men-online {
+        background: $color-green;
+        color:white;
+      }
+      &:hover b{
+        color: white;
+        font-family: $font-bold;
+      }
+    }
+    .badge{
+      float: right;
+      background: white;
+      color: $color-grey-line;
+      @include transition(all .3s ease-in-out);
+
+      /*@media only screen and(max-width: 1155px){
+        display: block;
+        margin-top: 5px;
+        width: 42px;
+        float: none;
+      }*/
+      b{
+        color: black;
+        @include transition(all .3s ease-in-out);
+      }
+    }
+  }
+  li.message{
+    background-position: 0px 4px;
+  }
+  li.men{
+    background-position: 0px -239px;
+  }
+  li.finance{
+    background-position: 0px -448px;
+  }
+  li.my-profile{
+    background-position: 0 -588px;
+  }
+}
+.hello-name {
+  margin-top: 40px;
+  color: #353535;
+  font-family: $font-normal;
+}
+
+.info-profile {
+  background-color:#F6F9FA;
+  font-family: $font-normal;
+  border: 2px dashed $color-blue-font;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+
+  h3{
+    color: #353535;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .progress {
+    margin-bottom: 25px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    height: 15px;
+    background-image: none;
+  }
+  p{
+    font-size: 14px;
+    color: #b0afaf;
+    width: 50%;
+    margin: 0 auto 25px;
+    line-height: 21px;
+    @media only screen and(max-width:625px){
+      width: 95%;
+    }
+  }
+  .btn-wrap{
+    text-align: center;
+
+  a.btn{
+    padding: 8px 15px;
+    margin:10px 5px;
+    background-color: $color-blue-font;
+    color:white;
+    border:none;
+    font-family: $font-bold;
+    @include transition(all .3s ease-in-out);
+
+    &:hover{
+      background-color: $color-green;
+    }
+  }
+  }
+}
+.prev-anketa.center-block.men-anketa {
+  max-width: 200px;
+  text-align: center;
+
+  h3.my-name {
+    font-size: 26px;
+    padding: 4px 0 0 0;
+  }
+  .v-prof {
+    right: 45px;
+    padding-top: 3px;
+    font-family: $font-normal;
+    background-position: -157px 4px;
+    font-size: 11px;
+      }
+  a.online {
+    font-size: 11px;
+  }
+  ul.action li a {
+    font-size: 12px;
+  }
+  ul.action li {
+    background: url(../img/profile-btn-mini.png) no-repeat;
+    padding: 7px 13px 7px 20px;
+    @include transition(all .3s ease-in-out);
+    &:hover{
+      background-color: rgba(0, 166, 255, 0.24);
+    }
+  }
+  ul.action li.letter {
+    background-position:3px 7px;;
+  }
+  ul.action li.chat {
+    background-position: -62px 7px;
+
+  }
+  ul.action li.video {
+    background-position: -124px 7px;
+  }
+}
+.other-photo-slider2{
+
+
+  .prev-anketa img {
+    max-width: 100%;
+    min-height: 250px;
+  }
+}
+article.new-men {
+  margin:75px 0 150px;
+
+  span.line-decor{
+    width: 10%;
+  }
+}
+article.men-online{
+  span.line-decor{
+    width: 10%;
+    @media only screen and(max-width:991px){
+      width: 7%;
+    }
+  }
+}
+
+
+h1.lady-catalog-title.men-catalog {
+  padding: 10px 68px 10px 15px;
+}
+
+span.glyphicon.glyphicon-triangle-right {
+  padding: 6px 6px 6px 7px;
+  right: 15px;
+
+}
+span.glyphicon.glyphicon-triangle-left, span.glyphicon.glyphicon-triangle-right {
+  background: rgb(67, 182, 216);
+  border-radius: 50%;
+  top: 30%;
+  font-size: 20px;
+  position: absolute;
+  z-index: 2000;
+  cursor: pointer;
+  color: white;
+  opacity: .6;
+  @include transition(all .3s ease-in-out);
+
+  &:hover{
+    opacity: .8;
+  }
+}
+
+/*-----END-LADY-ACCOUNT-PAGES.SCSS----------*/

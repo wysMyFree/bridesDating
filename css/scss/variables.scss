@@ -1,0 +1,95 @@
+$color-grey:#f6f6f6;
+$color-grey-line: #bebebe;
+$color-grey-dark:#e9e9e9;
+$color-grey-font:#646464;
+$color-grey-font2:#565656;
+$color-black:#000000;
+$color-green: #64b118;
+
+$color-blue:#c7edfc;
+$color-blue-font:#16b4dc;
+
+$font-bold:"OpenSansBold","HelveticaBold", sans-serif;
+$font-normal: "OpenSansRegular", "HelveticaRegular",  "PT Sans", sans-serif;
+$font-light:"OpenSansLight","HelveticaLight", "PT Sans", sans-serif;
+
+$font-size-big:35px;
+$font-size-md:24px;
+$font-size-sm:18px;
+$font-size-xsm:14px;
+$font-size-xxs:12px;
+
+$zero:0;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+@mixin transition-property($property...) {
+  -moz-transition-property:    $property;
+  -o-transition-property:      $property;
+  -webkit-transition-property: $property;
+  transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+  -moz-transition-property:    $duration;
+  -o-transition-property:      $duration;
+  -webkit-transition-property: $duration;
+  transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+  -moz-transition-timing-function:    $timing;
+  -o-transition-timing-function:      $timing;
+  -webkit-transition-timing-function: $timing;
+  transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+  -moz-transition-delay:    $delay;
+  -o-transition-delay:      $delay;
+  -webkit-transition-delay: $delay;
+  transition-delay:         $delay;
+}
+
+@mixin text-decoration-style($style: solid) {
+  // solid || double || dotted || dashed || wavy
+  @include prefixer(text-decoration-style, $style, moz webkit);
+}
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+@mixin flex-grow($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}

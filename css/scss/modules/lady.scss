@@ -1,0 +1,362 @@
+
+/*-------------LADY.SCSS--------------*/
+
+@import "../variables.scss";
+/*----------detail-lady--------------------*/
+
+div.page-header.lady-page-header{
+  text-align: left;
+  padding-top: 14px;
+  .breadcrumb {
+    padding-top: 0;
+  }
+}
+article.detail-lady.clearfix {
+  padding-top: 35px;
+}
+.name-profile {
+  font-family: $font-normal;
+  h3 {
+    color: black;
+    font-family: $font-normal;
+    font-size: $font-size-big;
+    margin-bottom: 7px;
+  }
+
+  p{
+    color: $color-grey-font;
+    font-size: $font-size-xsm;
+    margin-bottom: 7px;
+  }
+  span{
+    font-size: $font-size-xxs;
+  }
+  @media (max-width: 991px){
+    text-align: center;
+  }
+}
+.value{
+  color:black;
+}
+.table-wrap{
+  max-width: 415px;
+  margin:39px auto;
+
+  table{
+    border-spacing: 2px;
+    font-size: $font-size-xsm;
+    color:$color-grey-line;
+    tbody{
+
+      tr{
+        td {
+          border:none;
+          padding-bottom: 6px;
+          a{
+            color:$color-blue-font;
+          }
+          span {
+            color:black;
+            padding-left: 5px;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}
+.event-btn {
+  text-align: center;
+  a.btn {
+    border: none;
+    font-size: $font-size-xxs;
+    font-family: $font-normal;
+    color:$color-grey-line;
+    background: transparent url("../img/button-profile.png") no-repeat;
+    white-space: normal;
+    width: 86px;
+    padding: 32px 0 5px;
+    vertical-align: text-top;
+    @include transition(all .3s ease-in-out);
+
+      &:hover {
+        transform: Scale(.9,.9);
+      }
+    @media (max-width: 1056px){
+      width: 83px;
+    }
+    @media (max-width: 991px){
+      margin-top:20px;
+    }
+  }
+  a.inv {
+    background-position: 29px 0px;
+  }
+  a.start-chat {
+    background-position: -79px 0px;
+  }
+  a.write-letter {
+    background-position: -182px 0px;
+  }
+  a.add-to-fav {
+    background-position: -289px 0px;
+  }
+  a.like-here  {
+    background-position: -381px 0px;
+    margin-right: 0;
+  }
+}
+.btn-wrap{
+  text-align: left;
+  a.custum-btn{
+    margin: 0;
+    @media (max-width: 1056px){
+      padding-left: 44px;
+    }
+    @media (max-width: 767px){
+     display: block;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+  }
+  a.custum-btn.send-letter {
+    background: #F9F9F9 url(../img/letter.png) 12px 9px no-repeat;
+    color:$color-grey-font;
+    border: 1px solid #F9F9F9;
+    @include transition(all .3s ease-in-out);
+
+    &:hover{
+      border: 1px solid $color-grey-line;
+    }
+
+  }
+  a.custum-btn.invite{
+    margin-bottom: 0;
+  }
+}
+.start-chat {
+  background: url("../img/chat-buble.png") no-repeat 12px 7px;
+  }
+
+.present{
+  background:url("../img/chat-buble.png") no-repeat -354px 9px;
+}
+.col-lg-9.col-md-9.col-sm-10.col-xs-12.text-left {
+  text-align: left;
+}
+/*--------------------------------------*/
+.photo-profile{
+  .prev-anketa.center-block.anketa-result{
+    margin-bottom: 0;
+  }
+}
+/*----profile-fotos-----------------------*/
+.profile-fotos{
+  h3.title-ledies-group{
+    margin-bottom: 8px;
+  }
+}
+
+.view-all{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: $color-blue-font;
+  font-size: $font-size-xxs;
+
+}
+.info-foto {
+  text-align: center;
+  color: $color-grey-line;
+  font-size: $font-size-xxs;
+  margin-top: 0;
+  position: relative;
+
+  a{
+    span{
+      margin-right: 5px;
+      @include transition(all .3s ease-in-out);
+    }
+    &:hover span{
+      color: $color-blue-font;
+
+    }
+  }
+
+}
+.slick-wrap {
+margin-top: 45px;
+  .prev,.next{
+    display: block;
+    font-size: $font-size-big;
+    color:$color-grey-line;
+    background: white;
+    opacity: .6;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top:38%;
+    text-align: center;
+    padding-top: 2px;
+    cursor: pointer;
+    z-index: 2000;
+    @include transition(all .3s ease-in-out);
+
+    &:hover{
+      opacity: .8;
+    }
+  }
+  .prev{
+    left:0;
+  }
+  .next{
+    right: 0;
+  }
+  img{
+    max-height: 200px;
+    margin: 5px;
+    @include transition(all .3s ease-in-out);
+  }
+  .slick-slide{
+    width: auto;
+  }
+  a{
+    text-decoration: none;
+    img{
+      border:3px solid white;
+    }
+    &:hover img{
+      text-decoration: none;
+
+    }
+
+  }
+  }
+
+
+
+
+
+/******************************************/
+
+/*--------------About here------------------------*/
+.about-here{
+  padding: 0 100px;
+  font-family:$font-normal;
+  font-size: $font-size-sm;
+  color:$color-grey-font;
+  line-height: 30px;
+
+  @media (max-width: 871px) {
+    padding: 0 20px;
+
+  }
+
+  p{
+    margin-top: 40px;
+    @media (max-width: 871px){
+      clear: both;
+    }
+  }
+}
+.video-wrap {
+  min-height: 265px;
+  float: left;
+  margin: 15px 20px 20px 0;
+  width: 33.33%;
+  min-width: 410px;
+  background-color: $color-blue-font;
+  @media (max-width: 871px) {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    min-width: 230px;
+  }
+}
+/*---------------------------------*/
+
+
+/*-------------More Photos-----------*/
+
+.more-photos{
+  h3.title-ledies-group {
+    margin-bottom: 8px;
+  }
+}
+/*----------------------------------*/
+
+/*-------------do-you-like*-----------------*/
+.do-you-like{
+  text-align: center;
+  font-family: $font-normal;
+  color:$color-grey-line;
+  padding:50px 20px;
+  background-color: #f8f8f8;
+  max-width: 2000px;
+
+  h1{
+    font-size: $font-size-big;
+    color:$color-grey-font;
+  margin-bottom:20px;
+    }
+  p{
+    line-height: 30px;
+    font-size: $font-size-md;
+    color:$color-grey-line;
+      a{
+        color:$color-blue-font;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+  }
+  .or-you-can{
+    display: block;
+    font-size: $font-size-xsm;
+    margin: 15px auto;
+  }
+  .btn-wrap{
+    margin-top: 35px;
+    text-align: center;
+  }
+}
+
+/*-----------------------------------------*/
+.other-photo-slider{
+  .prev,.next{
+    display: block;
+    font-size: $font-size-big;
+    color:$color-grey-line;
+    background: white;
+    opacity: .6;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top:38%;
+    text-align: center;
+    padding-top: 2px;
+    cursor: pointer;
+    z-index: 2000;
+    @include transition(all .3s ease-in-out);
+
+    &:hover{
+      opacity: .8;
+    }
+  }
+  .prev{
+    left:0;
+  }
+  .next{
+    right: 0;
+  }
+  .prev-anketa.center-block.anketa-result {
+    padding: 0 10px;
+  }
+}
+
+/*------------END-LADY.SCSS--------------*/
